@@ -1,0 +1,934 @@
+[
+  {
+    "id": "acls_cardiac_arrest",
+    "category": "Resuscitation & Shock",
+    "title": "Adult Cardiac Arrest (ACLS Protocol)",
+    "keywords": ["cpr", "cardiac arrest", "vf", "pulseless vt", "asystole", "pea", "หัวใจหยุดเต้น", "หมดสติไม่หายใจ"],
+    "initial_actions": [
+      "เริ่ม High-Quality CPR ทันที (อัตราเร็ว 100-120 ครั้ง/นาที, ยุบตัวลึก 5-6 ซม., ปล่อยคืนสุด, รบกวนการกดให้น้อยที่สุด)",
+      "เปิด Airway, ให้ออกซิเจน 100% ต่อ Bag-Valve-Mask (30:2 หรือ 1 ครั้งทุก 6 วินาทีเมื่อใส่ Advanced Airway)",
+      "ติด Monitor/Defibrillator และประเมิน Rhythm ทันที"
+    ],
+    "interventions": [
+      "Shockable Rhythm (VF / Pulseless VT): Defibrillate ทันที (Biphasic 120-200 J หรือ Monophasic 360 J) -> ทำ CPR ต่อ 2 นาทีทันที -> เปิดเส้น IV/IO",
+      "Shockable Drug: Adrenaline 1 mg IV/IO ทุก 3-5 นาที (หลัง Shock ครั้งที่ 2) ร่วมกับ Amiodarone 300 mg IV/IO push (หลัง Shock ครั้งที่ 3) และพิจารณาซ้ำ 150 mg",
+      "Non-Shockable Rhythm (PEA / Asystole): ทำ CPR ต่อเนื่อง -> ให้ Adrenaline 1 mg IV/IO ให้เร็วที่สุด และซ้ำทุก 3-5 นาที (ไม่ต้อง Shock)",
+      "ค้นหาและแก้ไขสาเหตุ 5Hs & 5Ts (Hypovolemia, Hypoxia, Hydrogen ion/Acidosis, Hypo/Hyperkalemia, Hypothermia | Tension pneumothorax, Tamponade, Toxins, Thrombosis-PE, Thrombosis-Coronary)"
+    ],
+    "cautions": [
+      "ห้ามหยุดกดหน้าอกเพื่อตรวจคลื่นไฟฟ้าหัวใจนานเกิน 10 วินาที",
+      "หลีกเลี่ยง Hyperventilation (ไม่บีบถุงเร็วหรือแรงเกินไป)",
+      "หากคลำ Pulse ได้และมีความดัน (ROSC) ให้เริ่ม Post-Cardiac Arrest Care: Target SpO2 92-98%, SBP > 90 mmHg / MAP > 65 mmHg, ทำ 12-Lead EKG ทันที"
+    ]
+  },
+  {
+    "id": "symptomatic_bradycardia",
+    "category": "Resuscitation & Shock",
+    "title": "Adult Bradycardia with Pulse (HR < 50 bpm)",
+    "keywords": ["bradycardia", "ชีพจรช้า", "heart block", "sick sinus syndrome", "complete heart block", "chb", "mobitz"],
+    "initial_actions": [
+      "ประเมินสัญญาณชีพ (HR, BP, SpO2, Temp) และระดับความรู้สึกตัว",
+      "ตรวจหาอาการ Unstable: ความดันโลหิตตก (Hypotension), ซึมลง (Altered mental status), สัญญาณช็อก, แน่นหน้าอกเฉียบพลัน, หรือ Heart failure",
+      "ให้ออกซิเจนหาก SpO2 < 94%, เปิดเส้น IV, ติด EKG 12 Leads"
+    ],
+    "interventions": [
+      "หากไม่มี Unstable signs: เฝ้าระวัง ติดตามสัญญาณชีพ และหาสาเหตุ",
+      "หากมี Unstable signs: ให้ Atropine 1 mg IV push ทันที (ซ้ำได้ทุก 3-5 นาที รวมไม่เกิน 3 mg)",
+      "หาก Atropine ไม่ได้ผล: เริ่ม Transcutaneous Pacing (TCP) ทันที หรือให้ Dopamine IV infusion (5-20 mcg/kg/min) หรือ Adrenaline IV infusion (2-10 mcg/min)"
+    ],
+    "cautions": [
+      "หลีกเลี่ยงการใช้ Atropine ใน Mobitz Type II Second-degree AV Block และ Complete Heart Block (3rd degree) with wide QRS เพราะมักไม่ได้ผล ให้เตรียม Pacing หรือ Inotrope ทันที",
+      "การให้ Atropine ขนาดยาต่ำกว่า 0.5 mg อาจทำให้หัวใจเต้นช้าลงกว่าเดิม (Paradoxical bradycardia)"
+    ]
+  },
+  {
+    "id": "tachycardia_with_pulse",
+    "category": "Resuscitation & Shock",
+    "title": "Adult Tachycardia with Pulse (HR >= 150 bpm)",
+    "keywords": ["tachycardia", "ชีพจรเร็ว", "svt", "af with rvr", "vt with pulse", "wide qrs tachycardia", "หัวใจเต้นเร็ว"],
+    "initial_actions": [
+      "ประเมินความคงที่ของสัญญาณชีพ (Unstable signs: Hypotension, Altered mental status, Signs of shock, Ischemic chest discomfort, Acute heart failure)",
+      "เปิดเส้น IV line, ให้ออกซิเจน, ติด EKG Monitor และทำ 12-Lead EKG"
+    ],
+    "interventions": [
+      "Unstable Tachycardia: ทำ Synchronized Cardioversion ทันที (Narrow regular: 50-100 J, Narrow irregular: 120-200 J, Wide regular: 100 J) พิจารณา Sedation ก่อนทำหากคนไข้ยังรู้สึกตัว",
+      "Stable - Narrow QRS Regular (SVT): ทำ Vagal maneuvers (Modified Valsalva) -> หากไม่ได้ผลให้ Adenosine 6 mg Rapid IV push + Flush NSS 20 mL (หากไม่หายให้ซ้ำ 12 mg)",
+      "Stable - Narrow QRS Irregular (AF with RVR): ควบคุมอัตราการเต้นด้วย Beta-blocker หรือ Diltiazem IV",
+      "Stable - Wide QRS Regular (VT with pulse): ให้ Amiodarone 150 mg IV ใน 10 นาที (ตามด้วย Drip 1 mg/min ใน 6 ชม.แรก) หรือเตรียม Synchronized Cardioversion"
+    ],
+    "cautions": [
+      "ห้ามใช้ Adenosine หรือ Calcium Channel Blocker ในผู้ป่วย WPW with AF (Pre-excited AF: Wide complex irregular tachycardia) เพราะอาจกระตุ้นให้เกิด VF ได้",
+      "ตรวจสอบปุ่ม 'SYNC' ทุกครั้งก่อนกด Discharge ในโหมด Synchronized Cardioversion"
+    ]
+  },
+  {
+    "id": "anaphylaxis",
+    "category": "Resuscitation & Shock",
+    "title": "Anaphylaxis and Anaphylactic Shock",
+    "keywords": ["anaphylaxis", "anaphylactic shock", "แพ้ยารุนแรง", "แพ้อาหาร", "ผื่นลมพิษ แน่นหน้าอก", "stridor", "angioedema"],
+    "initial_actions": [
+      "หยุดสาร/ยาที่สงสัยทันที และประเมิน Airway, Breathing, Circulation",
+      "ให้ Adrenaline (1:1000) 0.3 - 0.5 mg IM บริเวณ Anterolateral aspect ของต้นขา (Vastus lateralis) ทันที ไม่ต้องรอผล Lab",
+      "จัดผู้ป่วยนอนราบ ยกขาสูง (ห้ามลุกนั่งเด็ดขาดเพราะอาจเกิด Empty heart syndrome) ให้ออกซิเจน High-flow Mask with reservoir"
+    ],
+    "interventions": [
+      "เปิด IV line เบอร์ใหญ่ 2 เส้น และให้ Fluid Resuscitation: 0.9% NSS หรือ Acetar 1,000 - 2,000 mL IV Rapid bolus ในผู้ใหญ่",
+      "หากอาการไม่ดีขึ้นใน 5-15 นาที: ให้ Adrenaline IM ซ้ำได้ทุก 5-15 นาที",
+      "Second-line medications: Chlorpheniramine (CPM) 10 mg IV + Ranitidine 50 mg IV (หรือ Famotidine 20 mg IV) + Hydrocortisone 100-200 mg IV (หรือ Dexamethasone 10 mg IV)",
+      "หากมี Bronchospasm ร่วมด้วย: พ่นยา Salbutamol 2.5-5 mg Nebulizer"
+    ],
+    "cautions": [
+      "Adrenaline IM เป็น First-line therapy ที่สำคัญที่สุด ห้ามชะลอการให้เพื่อไปฉีด Antihistamine หรือ Steroid ก่อน",
+      "ระวัง Refractory Anaphylaxis หากฉีด Adrenaline IM ไป 2-3 ครั้งแล้วยังไม่ดีขึ้น ให้เริ่ม Adrenaline IV infusion (0.1 mcg/kg/min titrate) ทันที",
+      "ต้อง Observe อาการใน ER อย่างน้อย 4-6 ชั่วโมงขึ้นไปเพื่อเฝ้าระวังภาวะ Biphasic Reaction"
+    ]
+  },
+  {
+    "id": "septic_shock",
+    "category": "Resuscitation & Shock",
+    "title": "Sepsis & Septic Shock (Hour-1 Bundle Protocol)",
+    "keywords": ["sepsis", "septic shock", "ติดเชื้อในกระแสเลือด", "ไข้สูง ความดันตก", "qsofa", "lactic acidosis"],
+    "initial_actions": [
+      "ตรวจประเมิน qSOFA (RR >= 22, Altered mental status, SBP <= 100 mmHg) หรือ SIRS criteria",
+      "เจาะวัด Serum Lactate ทันที",
+      "ทำ Hemoculture 2 ขวด (คนละตำแหน่ง) ก่อนเริ่มยาปฏิชีวนะ (ห้ามดีเลย์ยาปฏิชีวนะเกิน 45 นาที หากเจาะยาก)"
+    ],
+    "interventions": [
+      "เริ่ม Broad-spectrum IV Antibiotics ภายใน 1 ชั่วโมงแรกของการวินิจฉัย",
+      "Fluid Resuscitation: ให้ Crystalloid fluid (NSS หรือ Acetar) ขนาด 30 mL/kg IV Bolus ให้หมดภายใน 3 ชั่วโมงแรก (กรณีมี Hypotension SBP < 90 หรือ Lactate >= 4 mmol/L)",
+      "Vasopressor: หากให้สารน้ำครบแล้ว MAP ยัง < 65 mmHg ให้เริ่ม Norepinephrine IV infusion ทันที (First-line vasopressor) Target MAP >= 65 mmHg"
+    ],
+    "cautions": [
+      "ประเมิน Fluid overload และ Dynamic fluid responsiveness สม่ำเสมอ (ฟังเสียงปอด, ตรวจ Lung ultrasound / IVC collapsibility)",
+      "ห้ามใช้ Dopamine เป็นตัวเลือกแรกใน Septic shock เนื่องจากเพิ่มความเสี่ยง Arrhythmias"
+    ]
+  },
+  {
+    "id": "severe_hyperkalemia",
+    "category": "Resuscitation & Shock",
+    "title": "Severe Hyperkalemia (K >= 6.5 mEq/L หรือมี EKG Changes)",
+    "keywords": ["hyperkalemia", "โพแทสเซียมสูง", "peaked t wave", "wide qrs hyperkalemia", "sine wave", "โพแทสเซียม"],
+    "initial_actions": [
+      "ทำ 12-Lead EKG ทันทีเพื่อตรวจหา EKG Findings: Tall peaked T wave, Prolonged PR interval, Flattened/Lost P wave, Widened QRS complex, Sine wave pattern, หรือ Bradycardia/VT/VF",
+      "ติด Cardiac Monitor และเปิดเส้น IV line ทันที"
+    ],
+    "interventions": [
+      "1. Membrane Stabilization (ป้องกันหัวใจหยุดเต้น): 10% Calcium Gluconate 10 mL (1 amp) IV ช้าๆ ใน 2-5 นาที (ออกฤทธิ์ใน 1-3 นาที หาก EKG ไม่ดีขึ้นใน 5-10 นาที ให้ซ้ำได้อีก 1 amp)",
+      "2. Shifting K+ into cells: 50% Glucose 50 mL (D50) + Regular Insulin (RI) 10 units IV push (ระวังภาวะ Hypoglycemia ให้ติดตาม DTX ที่ 30 และ 60 นาที)",
+      "2.1 ร่วมกับ Salbutamol 10-20 mg พ่น Nebulizer ใน 15 นาที",
+      "2.2 พิจารณา 7.5% Sodium Bicarbonate 50 mL IV ช้าๆ ในกรณีที่มี Metabolic Acidosis ร่วมด้วย",
+      "3. Elimination of K+: Sodium Polystyrene Sulfonate (Kalimate/Kayexalate) 15-30 g Oral/Rectal หรือ Furosemide 40-80 mg IV (หากไตยังทำงานได้)",
+      "4. พิจารณา Emergency Hemodialysis (ล้างไตฉุกเฉิน) ในกรณีไตวายเรื้อรัง (ESRD) หรือให้ยาแล้วไม่ตอบสนอง"
+    ],
+    "cautions": [
+      "Calcium Gluconate ช่วยป้องกันภาวะหัวใจเต้นผิดจังหวะเท่านั้น แต่ไม่ได้ลดระดับ Potassium ในเลือด จึงต้องให้ยาลดระดับ K (RI+Glucose) ควบคู่เสมอ",
+      "ระวังการให้ Calcium ในผู้ป่วยที่สงสัยภาวะ Digoxin Toxicity (อาจกระตุ้น Malignant arrhythmias)"
+    ]
+  },
+  {
+    "id": "severe_hypokalemia",
+    "category": "Resuscitation & Shock",
+    "title": "Severe Hypokalemia (K < 2.5 mEq/L หรือมีอาการ)",
+    "keywords": ["hypokalemia", "โพแทสเซียมต่ำ", "u wave", "t wave flattening", "ขาอ่อนแรง", "กล้ามเนื้ออ่อนแรง"],
+    "initial_actions": [
+      "ทำ 12-Lead EKG ตรวจหา EKG Findings: T-wave flattening/inversion, ST depression, Prominent U-wave, Prolonged QT/QU interval, PVCs หรือ Torsades de pointes",
+      "ตรวจระดับ Magnesium เสมอ (Hypomagnesemia มักเกิดร่วมและทำให้แก้ K ไม่ขึ้น)"
+    ],
+    "interventions": [
+      "IV Potassium Replacement: KCl 20-40 mEq ผสมใน NSS 1,000 mL Drip (ความเข้มข้นทาง Peripheral line ห้ามเกิน 40 mEq/L และอัตราการให้ห้ามเกิน 10-20 mEq/hr)",
+      "หากจำเป็นต้องให้ทาง Peripheral line แบบเข้มข้นสูง: KCl 10 mEq ใน NSS 100 mL IV drip ใน 1 ชั่วโมง (ต้องมี Cardiac monitor เฝ้าระวัง)",
+      "Oral Replacement (หากผู้ป่วยกินได้): KCl elixir 30-40 mL PO หรือ Kalium 2-3 เม็ด PO ทุก 4-6 ชั่วโมง",
+      "ให้ 50% Magnesium Sulfate 1-2 g IV Drip ใน 15-30 นาที หากมี Hypomagnesemia ร่วมด้วย"
+    ],
+    "cautions": [
+      "ห้ามฉีด KCl แบบ IV Push เด็ดขาด (Fatal Cardiac Arrest)",
+      "หลีกเลี่ยงการผสม KCl ในสารน้ำที่มี Dextrose (Glucose) ในช่วงแรก เพราะน้ำตาลจะกระตุ้นการหลั่ง Insulin ดึง K เข้าเซลล์ ทำให้ K ในเลือดยิ่งต่ำลง"
+    ]
+  },
+  {
+    "id": "stemi_acs_protocol",
+    "category": "Cardiovascular Emergency",
+    "title": "Acute STEMI (ST-Elevation Myocardial Infarction)",
+    "keywords": ["stemi", "inferior stemi", "anterior stemi", "lateral stemi", "posterior stemi", "rv infarction", "เจ็บแน่นหน้าอก", "st elevation"],
+    "initial_actions": [
+      "ตรวจ 12-Lead EKG ภายใน 10 นาที (เกณฑ์ ST elevation: >= 1 mm ใน limb leads หรือ >= 2 mm ใน V2-V3 ในชาย >= 40 ปี, >= 2.5 mm ในชาย < 40 ปี, >= 1.5 mm ในหญิง)",
+      "หากพบ Inferior STEMI (II, III, aVF) ต้องทำ EKG Right-sided leads (V3R, V4R) เพื่อดู RV Infarction เสมอ",
+      "หากสงสัย Posterior STEMI (ST depression V1-V3 with tall R wave) ต้องทำ EKG Posterior leads (V7-V9)",
+      "Oxygen therapy เฉพาะเมื่อ SpO2 < 94% (Target 94-98%)",
+      "เปิดเส้น IV line 2 เส้น, ติด Cardiac Monitor และเตรียม Defibrillator"
+    ],
+    "interventions": [
+      "1. Dual Antiplatelet Therapy (DAPT) ทันที:\n - Aspirin 300 mg (เคี้ยวก่อนกลืนทันที)\n - ร่วมกับ Clopidogrel 300-600 mg PO stat (อายุ > 75 ปี ให้ 75 mg หรือ 300 mg ตามดุลยพินิจ) หรือ Ticagrelor 180 mg PO stat",
+      "2. Pain Control & Preload Reduction:\n - Morphine 2-4 mg IV ช้าๆ (หากปวดรุนแรง)\n - Isordil 5 mg SL หรือ Nitroglycerin spray (ห้ามใช้ใน RV Infarction หรือ BP ตก)",
+      "3. Reperfusion Strategy:\n - Primary PCI: ทางเลือกแรก (Door-to-Balloon < 90 นาที หรือ Transfer Door-to-Balloon < 120 นาที)\n - Fibrinolytic Therapy (เช่น Streptokinase 1.5 ล้าน units IV ใน 60 นาที หรือ Tenecteplase-TNK / Alteplase): ทำกรณีส่งทำ PCI ไม่ทันใน 120 นาที (Door-to-Needle < 30 นาที)",
+      "4. Anticoagulation: Enoxaparin (LMWH) 30 mg IV bolus ตามด้วย 1 mg/kg SC q 12h หรือ Unfractionated Heparin (UFH) ตามข้อบ่งชี้"
+    ],
+    "cautions": [
+      "ข้อห้ามเด็ดขาดของ Nitrate และ Morphine: ผู้ป่วยที่มี Right Ventricular (RV) Infarction (มี ST elevation ใน V4R), ความดันโลหิต SBP < 90 mmHg, หรือเพิ่งใช้ยากลุ่ม PDE-5 inhibitors (Viagra/Cialis) ใน 24-48 ชม.",
+      "ก่อนให้ Fibrinolytic ต้องตรวจ Absolute Contraindications เสมอ (ประวัติ Intracranial hemorrhage, Ischemic stroke ภายใน 3 เดือน, Active internal bleeding, สงสัย Aortic dissection)"
+    ]
+  },
+  {
+    "id": "nstemi_unstable_angina",
+    "category": "Cardiovascular Emergency",
+    "title": "NSTEMI / High-Risk Unstable Angina (NSTE-ACS)",
+    "keywords": ["nstemi", "non-stemi", "unstable angina", "ua", "troponin", "st depression", "t inversion", "เจ็บแน่นหน้าอกร้าวไปกราม"],
+    "initial_actions": [
+      "ประเมินอาการเจ็บแน่นหน้าอก และทำ 12-Lead EKG ทันที (พบ ST depression >= 0.5 mm, T-wave inversion ลึก หรือ EKG ปกติ)",
+      "เจาะเลือดตรวจ Cardiac Biomarkers (High-sensitivity Troponin I/T) และประเมินความเสี่ยงด้วย TIMI Score หรือ GRACE Score",
+      "Oxygen therapy เฉพาะเมื่อ SpO2 < 94%"
+    ],
+    "interventions": [
+      "1. Antiplatelets: Aspirin 300 mg PO (เคี้ยวก่อนกลืน) + Clopidogrel 300-600 mg PO stat (หรือ Ticagrelor 180 mg)",
+      "2. Anticoagulation: Enoxaparin (LMWH) 1 mg/kg SC q 12h (ปรับลดขนาดยาหาก eGFR < 30 mL/min) หรือ Fondaparinux 2.5 mg SC daily",
+      "3. Anti-ischemic therapy: Isordil 5 mg SL ทุก 5 นาที (สูงสุด 3 ครั้ง) หรือเริ่ม Nitroglycerin (NTG) IV infusion หากยังมีอาการแน่นหน้าอกต่อเนื่องและ SBP > 100 mmHg",
+      "4. Early Beta-blocker (เช่น Metoprolol 25-50 mg PO) ในกรณีไม่มี Heart failure หรือ Bradycardia/AV block",
+      "5. High-intensity Statin: Atorvastatin 40-80 mg PO stat"
+    ],
+    "cautions": [
+      "ห้ามให้ยา Fibrinolytic therapy (ยาสลายลิ่มเลือด) ในผู้ป่วย NSTEMI / Unstable Angina เด็ดขาด",
+      "ระวังภาวะ Ongoing Ischemia หรือ Hemodynamic Instability ซึ่งเป็นข้อบ่งชี้ในการทำ Urgent Invasive Coronary Angiography ทันที"
+    ]
+  },
+  {
+    "id": "acute_pulmonary_edema",
+    "category": "Cardiovascular Emergency",
+    "title": "Acute Decompensated Heart Failure & Pulmonary Edema",
+    "keywords": ["acute pulmonary edema", "heart failure", "น้ำท่วมปอด", "หอบเหนื่อย นอนราบไม่ได้", "orthopnea", "pnd", "frothy sputum", "crepitation"],
+    "initial_actions": [
+      "จัดท่านั่งห้อยขาลงข้างเตียง (High Fowler's position with legs dependent)",
+      "ประเมินระบบหายใจและ CXR (พบลักษณะ Cardiomegaly, Bat-wing infiltration, Kerley B lines, Pleural effusion)",
+      "ให้ออกซิเจน และพิจารณา Non-Invasive Ventilation (NIV / CPAP or BiPAP) ให้เร็วที่สุด (CPAP 5-10 cmH2O) หากมี Respiratory distress หรือ SpO2 < 90%"
+    ],
+    "interventions": [
+      "1. Diuretic: Furosemide (Lasix) 40-80 mg IV push (หากใช้ยาเดิมอยู่แล้ว ให้ขนาดเท่ากับหรือ 2 เท่าของขนาดยาเดิมทางหลอดเลือด)",
+      "2. Vasodilator (กรณี SBP > 100 mmHg):\n - Nitroglycerin (NTG) IV infusion เริ่มที่ 10-20 mcg/min และปรับเพิ่มขึ้นทุก 3-5 นาที Target SBP ลดลงอย่างปลอดภัย\n - หรือ Isordil 5 mg SL 1 เม็ดระหว่างรอตั้งสาย Drip",
+      "3. Inotrope / Vasopressor (กรณี Cardiogenic Shock / SBP < 90 mmHg):\n - หาก BP ตกแต่ไม่มี Sepsis: Norepinephrine IV infusion ร่วมกับ Dobutamine 2.5-10 mcg/kg/min",
+      "4. พิจารณา Morphine 2-4 mg IV ช้าๆ เพื่อลด Preload และความกระสับกระส่าย (ใช้ด้วยความระมัดระวัง)"
+    ],
+    "cautions": [
+      "ห้ามให้ Vasodilators (Nitroglycerin/Isordil) ในผู้ป่วยที่มี SBP < 90-100 mmHg หรือสงสัย Aortic Stenosis รุนแรง",
+      "ห้ามใช้ Non-Invasive Ventilation (CPAP/BiPAP) หากผู้ป่วยหมดสติ อาเจียนรุนแรง หรือมีภาวะ Pneumothorax"
+    ]
+  },
+  {
+    "id": "hypertensive_emergency",
+    "category": "Cardiovascular Emergency",
+    "title": "Hypertensive Emergency (ความดันโลหิตสูงวิกฤตพร้อมอวัยวะเป้าหมายถูกทำลาย)",
+    "keywords": ["hypertensive emergency", "hypertension crisis", "ความดันโลหิตสูงวิกฤต", "ความดันสูง ปวดหัว ตาพร่า", "nicardipine", "labetalol", "target organ damage"],
+    "initial_actions": [
+      "ตรวจวัดความดันโลหิตซ้ำ (BP > 180/120 mmHg) และตรวจหาภาวะ Acute Target Organ Damage:\n - ระบบประสาท: Stroke, Hypertensive Encephalopathy, Intracranial hemorrhage\n - ระบบหัวใจ: Acute Aortic Dissection, Acute Coronary Syndrome, Acute Pulmonary Edema\n - ระบบไต: Acute Renal Failure, ปัสสาวะออกน้อย\n - ระบบตา: Papilledema, Flame hemorrhages",
+      "เปิดเส้น IV line, ทำ 12-Lead EKG, ส่งตรวจ Lab (BUN, Cr, Electrolytes, Urinalysis, Cardiac markers)"
+    ],
+    "interventions": [
+      "เป้าหมายทั่วไป: ลด Mean Arterial Pressure (MAP) ลงไม่เกิน 20-25% ภายใน 1 ชั่วโมงแรก จากนั้นลดลงเหลือ 160/100-110 mmHg ในช่วง 2-6 ชั่วโมงถัดไป",
+      "First-line Medication:\n - Nicardipine IV infusion: เริ่มต้น 5 mg/hr ปรับเพิ่มขึ้นครั้งละ 2.5 mg/hr ทุก 5-15 นาที (ขนาดยาสูงสุด 15 mg/hr) เมื่อได้ Target ให้ลดเหลือ Maintenance 3 mg/hr\n - Labetalol IV: 10-20 mg IV push ช้าๆ ใน 2 นาที (ซ้ำได้ทุก 10 นาที สูงสุด 300 mg) หรือ Drip 0.5-2 mg/min",
+      "กรณียกเว้นที่ต้องลดความดันเร็วเป็นพิเศษ:\n - Acute Aortic Dissection: ลด SBP ลงเหลือ 100-120 mmHg ภายใน 20 นาที ร่วมกับควบคุม HR < 60 bpm\n - Acute Ischemic Stroke ที่มีข้อบ่งชี้ให้ rtPA: ควบคุม BP ให้อยู่ < 185/110 mmHg ก่อนฉีดยา"
+    ],
+    "cautions": [
+      "ห้ามลดความดันโลหิตลงเร็วหรือต่ำเกินไป เพราะจะทำให้เกิด Ischemic Stroke หรือ Myocardial/Renal Hypoperfusion",
+      "ห้ามใช้ Nifedipine ชนิดเคี้ยว/หยดใต้ลิ้น (Short-acting oral nifedipine) เด็ดขาด เนื่องจากควบคุมอัตราการลดของความดันไม่ได้และเสี่ยงต่อการเสียชีวิต"
+    ]
+  },
+  {
+    "id": "acute_aortic_dissection",
+    "category": "Cardiovascular Emergency",
+    "title": "Acute Aortic Dissection (หลอดเลือดแดงใหญ่เอออร์ตาปริเซาะฉุกเฉิน)",
+    "keywords": ["aortic dissection", "ฉีกขาดเอออร์ตา", "เจ็บทะลุหลัง", "ripping chest pain", "tearing pain", "widened mediastinum", "ชีพจรสองข้างไม่เท่ากัน"],
+    "initial_actions": [
+      "ซักประวัติอาการเจ็บหน้าอกรุนแรงเฉียบพลันลักษณะฉีกขาด (Tearing / Ripping pain) ร้าวทะลุหลังระหว่างสะบัก",
+      "ตรวจวัดสัญญาณชีพเปรียบเทียบทั้ง 2 แขน (ความดันต่างกัน > 20 mmHg หรือชีพจรสองข้างไม่เท่ากัน / Pulse deficit)",
+      "ตรวจ CXR (พบลักษณะ Widened mediastinum > 8 cm, Loss of aortic knob contour, Tracheal deviation)",
+      "เปิด IV line ขนาดใหญ่ 2 เส้น, NPO ทันที, เตรียมเลือด และส่ง Urgent CTA Whole Aorta (Chest & Abdomen)"
+    ],
+    "interventions": [
+      "1. ควบคุมอัตราการเต้นของหัวใจ (Target HR < 60 bpm) เป็นอันดับแรก:\n - Esmolol IV infusion: เริ่ม 500 mcg/kg IV bolus ใน 1 นาที ตามด้วย 50-200 mcg/kg/min\n - หรือ Labetalol IV: 10-20 mg IV push ช้าๆ ซ้ำได้ทุก 10 นาที หรือ Drip",
+      "2. ควบคุมความดันโลหิต (Target SBP 100-120 mmHg) ภายใน 20 นาที:\n - ให้ Nicardipine IV infusion หรือ Sodium Nitroprusside IV (ต้องให้ Beta-blocker ควบคุม HR ให้ได้ก่อนเสมอ เพื่อป้องกัน Reflex Tachycardia และลด Shearing force)",
+      "3. Adequate Pain Control: Morphine 2-4 mg IV หรือ Fentanyl 25-50 mcg IV เพื่อลด Sympathetic drive",
+      "4. ปรึกษาศัลยแพทย์ทรวงอก (Cardiothoracic Surgeon) ทันที:\n - Stanford Type A (Involve Ascending Aorta): เตรียมผ่าตัดฉุกเฉินทันที\n - Stanford Type B (Descending Aorta): ให้การรักษาทางยา (Medical management) เป็นหลัก ยกเว้นมีภาวะแทรกซ้อน"
+    ],
+    "cautions": [
+      "ห้ามให้ยากลุ่ม Vasodilator (เช่น Nicardipine, Nitroprusside, Hydralazine) ก่อนให้ Beta-blocker เพราะจะเกิด Reflex Inotropy/Chronotropy ทำให้ผนังหลอดเลือดฉีกขาดเพิ่มขึ้น",
+      "ห้ามให้ยาต้านเกล็ดเลือด (Aspirin/Clopidogrel) หรือยากลุ่ม Anticoagulants หากยังแยกโรคกับ STEMI ไม่ได้และมีอาการสงสัย Aortic Dissection"
+    ]
+  },
+  {
+    "id": "pulmonary_embolism",
+    "category": "Cardiovascular Emergency",
+    "title": "Acute Pulmonary Embolism (ลิ่มเลือดอุดกั้นในปอดฉุกเฉิน)",
+    "keywords": ["pulmonary embolism", "pe", "ลิ่มเลือดอุดกั้นในปอด", "s1q3t3", "เหนื่อยเฉียบพลัน ขาบวม", "westermark", "hampton hump", "dvt"],
+    "initial_actions": [
+      "ประเมินความเสี่ยงด้วย Wells' Score หรือ Geneva Score",
+      "ตรวจ 12-Lead EKG (พบลักษณะ Sinus Tachycardia พบบ่อยสุด, S1Q3T3 pattern, T-wave inversion V1-V4, New RBBB)",
+      "ตรวจ CXR (อาจพบ Westermark's sign, Hampton's hump, Fleischner's sign หรือ CXR ปกติแต่ผู้ป่วยเหนื่อยมาก / Hypoxemia)",
+      "Bedside Echocardiography (ตรวจหา RV strain, RV enlargement, McConnnell's sign) หรือส่ง Urgent CTA Pulmonary Artery"
+    ],
+    "interventions": [
+      "1. High-Risk (Massive PE - มีภาวะ Shock / SBP < 90 mmHg):\n - Thrombolytic Therapy ทันที: rtPA (Alteplase) 100 mg IV Drip ใน 2 ชั่วโมง (หรือ 50 mg IV ใน 15 นาที กรณี Cardiac Arrest) หรือ Streptokinase 1.5 ล้าน units ใน 2 ชั่วโมง\n - สารน้ำอย่างระมัดระวัง (Cautious fluid resuscitation NSS < 500 mL) และเริ่ม Norepinephrine IV infusion",
+      "2. Intermediate-to-Low Risk (Non-Massive PE - สัญญาณชีพคงที่):\n - เริ่ม Anticoagulation ทันที: Enoxaparin (LMWH) 1 mg/kg SC q 12h หรือ Unfractionated Heparin (UFH) 80 units/kg IV bolus ตามด้วย 18 units/kg/hr titration\n - หรือเริ่ม Direct Oral Anticoagulants (DOACs) เช่น Rivaroxaban, Apixaban ตามเกณฑ์"
+    ],
+    "cautions": [
+      "หลีกเลี่ยงการให้สารน้ำปริมาณมากเกินไป (Aggressive fluid bolus) เพราะจะทำให้เกิด Right Ventricular Overload และ RV Failure รุนแรงขึ้น",
+      "หากผู้ป่วยมี Cardiac Arrest จากภาวะสงสัย PE ให้พิจารณาฉีด Thrombolytic (rtPA/Tenecteplase) ระหว่างการทำ CPR และทำ CPR ต่อเนื่องอย่างน้อย 60-90 นาทีหลังฉีดยา"
+    ]
+  },
+  {
+    "id": "tension_pneumothorax",
+    "category": "Pulmonary Emergency",
+    "title": "Tension Pneumothorax & Spontaneous Pneumothorax",
+    "keywords": ["pneumothorax", "tension pneumothorax", "ลมรั่วในปอด", "หายใจไม่ออก หายใจเหนื่อยเฉียบพลัน", "tracheal shift", "hyperresonance", "icd", "needle decompression"],
+    "initial_actions": [
+      "การวินิจฉัย Tension Pneumothorax เป็นภาวะฉุกเฉินทางคลินิก (Clinical Diagnosis) ห้ามรอทำ CXR หากผู้ป่วยมีสัญญาณช็อก, ความดันตก, เสียงหายใจข้างที่เกิดเหตุลดลง/หายไป, เคาะโปร่ง (Hyperresonance), หลอดลมเอียงไปด้านตรงข้าม (Tracheal deviation), และหลอดเลือดดำที่คอโป่ง (JVD)",
+      "เกณฑ์ภาพ Chest X-ray (กรณี Simple Pneumothorax / ไม่ช็อก):\n - พบ Hyperlucent area โดยไม่มี Vascular lung markings\n - เห็นขอบเส้นเยื่อหุ้มปอด (Visceral pleural line)\n - ปอดแฟบ (Lung collapse)\n - กรณี Tension: พบ Mediastinal & Tracheal shift ไปฝั่งตรงข้าม และ Deep sulcus sign (ในท่านอน)",
+      "Oxygen therapy: ให้ออกซิเจน High-flow 100% Mask with reservoir bag เพื่อช่วยเร่งการดูดซึมลมกลับ (Nitrogen washout)"
+    ],
+    "interventions": [
+      "1. Emergency Needle Decompression (ทำทันทีเมื่อสงสัย Tension Pneumothorax):\n - ใช้ Angiocath/เข็มเบอร์ 14-16G ยาวอย่างน้อย 5 ซม. (2 นิ้ว)\n - ตำแหน่งที่ 1 (แนะนำปัจจุบัน): 4th หรือ 5th Intercostal Space (ICS) บริเวณ Anterior Axillary Line ข้างที่มีรอยโรค\n - ตำแหน่งที่ 2 (ดั้งเดิม): 2nd ICS บริเวณ Midclavicular Line\n - แทงเข็มชิดขอบบนของกระดูกซี่โครงด้านล่างเพื่อเลี่ยง Intercostal bundle เมื่อได้ยินเสียงลมพุ่ง ให้คาปลอกพลาสติกไว้",
+      "2. Tube Thoracostomy (การใส่ท่อระบายทรวงอก - ICD):\n - ตำแหน่ง Safe Triangle: 4th-5th ICS ในแนว Anterior to Mid-Axillary Line\n - ขนาดท่อ: 28-32 Fr (สำหรับ Pneumothorax ทั่วไปอาจใช้ 20-24 Fr, กรณี Trauma/Hemothorax ใช้ 28-32 Fr)\n - ต่อท่อเข้ากับระบบ Under-water seal",
+      "3. ตรวจเช็กสัญญาณชีพซ้ำ และทำ Post-procedure CXR เพื่อยืนยันตำแหน่งท่อระบายและการขยายตัวของปอด"
+    ],
+    "cautions": [
+      "ห้ามส่งผู้ป่วยไปทำ CXR หรือ CT scan หากสงสัยภาวะ Tension Pneumothorax ให้ทำ Needle Decompression หรือ Finger Thoracostomy ทันที",
+      "ห้ามใช้แรงดันบวก (Positive Pressure Ventilation / Bag-mask / Intubation) ก่อนใส่ ICD หากไม่จำเป็นอย่างยิ่ง เพราะจะทำให้ Tension Pneumothorax รุนแรงขึ้นจนเกิด Cardiac Arrest"
+    ]
+  },
+  {
+    "id": "massive_hemothorax",
+    "category": "Pulmonary Emergency",
+    "title": "Massive Hemothorax (เลือดออกในช่องเยื่อหุ้มปอดปริมาณมาก)",
+    "keywords": ["hemothorax", "massive hemothorax", "เลือดออกในปอด", "ท่อระบายทรวงอก เลือดออก", "blunting costophrenic angle", "shock from chest trauma", "thoracotomy"],
+    "initial_actions": [
+      "ประเมิน Primary Survey (ABCDEs): สัญญาณชีพช็อก (BP ตก, HR เร็ว), เสียงหายใจข้างที่บาดเจ็บลดลง, เคาะทึบ (Dullness to percussion), หลอดเลือดดำที่คอแฟบ (Flat neck veins จาก Hypovolemia)",
+      "เกณฑ์ภาพ Chest X-ray:\n - Blunting of Costophrenic angle (เลือด >= 200-300 mL)\n - Meniscus sign หรือลักษณะ Radio-opacity สม่ำเสมอครอบคลุมเนื้อปอด\n - Opacification of Hemithorax (กรณี Massive เลือด > 1,500 mL)",
+      "เปิด IV line ขนาดใหญ่ (เบอร์ 14-16G) 2 เส้น, เจาะเลือด Type and Crossmatch, เตรียมเปิด Massive Transfusion Protocol (MTP)"
+    ],
+    "interventions": [
+      "1. Tube Thoracostomy (ICD) ขนาดใหญ่:\n - ใส่ท่อระบายทรวงอกเบอร์ 28-32 Fr ที่ 5th ICS Anterior-Mid Axillary Line ชี้ปลายท่อไปทาง Posterior-Superior\n - ต่อระบบ Under-water seal และต่อตัวนับปริมาตรเลือด (Autotransfusion system หากมี)",
+      "2. สารน้ำและเลือดทดแทน (Fluid & Blood Resuscitation):\n - ให้ Uncrossed O-negative / O-positive PRBC หรือ Balanced Component (PRBC:FFP:Platelets 1:1:1)",
+      "3. ข้อบ่งชี้ในการเปิดผ่าตัดทรวงอกฉุกเฉิน (Indications for Urgent Thoracotomy):\n - เลือดออกทันทีหลังใส่ ICD >= 1,500 mL\n - เลือดออกต่อเนื่อง >= 200 mL/hr ติดต่อกัน 2-4 ชั่วโมง\n - ภาวะความดันตกที่ไม่ตอบสนองต่อการให้เลือดและสารน้ำอย่างต่อเนื่อง"
+    ],
+    "cautions": [
+      "การใส่ ICD เร็วเกินไปโดยยังไม่ได้เปิดเส้น IV หรือยังไม่มีเลือดพร้อมให้อาจทำให้ความดันตกเฉียบพลันจากการคลายตัวของ Tamponade effect",
+      "ห้ามหนีบสาย (Clamp) ท่อ ICD เด็ดขาด ยกเว้นกรณีเปลี่ยนขวดรองรับ เพราะอาจเปลี่ยนภาวะ Hemothorax ให้กลายเป็น Clotted Hemothorax หรือ Tension Hemopneumothorax"
+    ]
+  },
+  {
+    "id": "acute_severe_asthma",
+    "category": "Pulmonary Emergency",
+    "title": "Acute Severe Asthma & Status Asthmaticus",
+    "keywords": ["asthma", "หอบหืดรุนแรง", "จับหืด", "wheezing", "silent chest", "status asthmaticus", "magnesium sulfate asthma", "salbutamol"],
+    "initial_actions": [
+      "ประเมินความรุนแรง (Severe / Life-threatening signs):\n - พูดได้เป็นคำๆ (Inability to complete sentences)\n - หายใจเร็ว RR > 30, ชีพจรเร็ว HR > 120, เหงื่อแตก, Paradoxical pulse\n - ภาวะวิกฤต (Life-threatening): Silent chest (ฟังปอดไม่ได้ยินเสียงลมหายใจ), Cyanosis, ซึม/สับสน, SpO2 < 90%\n - ตรวจวัด Peak Expiratory Flow (PEF) < 50% ของค่ามาตรฐาน (หากผู้ป่วยทำไหว)",
+      "ให้ออกซิเจน Mask with reservoir Target SpO2 93-95%"
+    ],
+    "interventions": [
+      "1. Inhaled Short-Acting Beta-2 Agonist (SABA) + SAMA:\n - Salbutamol (Ventolin) 2.5-5 mg + Ipratropium Bromide (Berodual) 0.5 mg พ่น Nebulizer ทุก 20 นาที ต่อเนื่อง 3 doses ในชั่วโมงแรก (หรือพ่นแบบ Continuous Nebulization)",
+      "2. Systemic Corticosteroids ทันที (ให้เร็วที่สุด):\n - Hydrocortisone 100-200 mg IV stat หรือ Dexamethasone 10 mg IV stat\n - หรือ Prednisolone 40-50 mg PO (หากผู้ป่วยยังกลืนได้ดี)",
+      "3. Intravenous Magnesium Sulfate (กรณี Severe / Refractory to Nebulizer):\n - Magnesium Sulfate (50%) 2 g IV ผสมใน NSS/D5W 100 mL Drip ใน 20 นาที",
+      "4. Adrenaline (กรณี Life-threatening หรือสงสัย Anaphylaxis ร่วมด้วย):\n - Adrenaline (1:1000) 0.3-0.5 mg IM บริเวณต้นขา",
+      "5. หากเข้าสู่ภาวะ Respiratory Failure / Exhaustion:\n - เตรียมใส่ท่อช่วยหายใจ (Intubation) ด้วย Ketamine (1-2 mg/kg IV) และ Succinylcholine/Rocuronium\n - ตั้งเครื่องช่วยหายใจ: Low RR (8-10 bpm), Large Expiratory Time (I:E ratio 1:3 ถึง 1:4), Low Tidal Volume (6-8 mL/kg) เพื่อป้องกัน Dynamic Hyperinflation (Auto-PEEP) และ Barotrauma"
+    ],
+    "cautions": [
+      "ภาวะ 'Silent Chest' (ฟังปอดแล้วไม่ได้ยินเสียง Wheezing) ไม่ได้แปลว่าอาการดีขึ้น แต่เป็นสัญญาณอันตรายขั้นวิกฤตที่ทางเดินหายใจตีบตันจนไม่มีลมผ่าน",
+      "ห้ามใช้ยากลุ่ม Sedatives หรือ Tranquilizers ทั่วไปโดยที่ยังไม่ได้ใส่ท่อช่วยหายใจ เพราะกดการหายใจ"
+    ]
+  },
+  {
+    "id": "aecopd",
+    "category": "Pulmonary Emergency",
+    "title": "Acute Exacerbation of COPD (AECOPD)",
+    "keywords": ["copd", "aecopd", "ถุงลมโป่งพองกำเริบ", "หลอดลมอักเสบเรื้อรัง", "hypercapnia", "bipap copd", "co2 retention"],
+    "initial_actions": [
+      "ประเมิน Cardinal Symptoms 3 ข้อ (Anthonisen criteria): เหนื่อยเพิ่มขึ้น, ปริมาณเสมหะเพิ่มขึ้น, เสมหะเปลี่ยนเป็นสีขุ่น/หนอง (Purulent sputum)",
+      "Controlled Oxygen Therapy: ให้ออกซิเจนผ่าน Nasal Cannula 1-2 LPM หรือ Venturi Mask (FiO2 24-28%) Target SpO2 88-92% เท่านั้น (เพื่อป้องกัน Hypercapnic Respiratory Failure)",
+      "ตรวจ CXR (ดูภาวะ Hyperinflation, Flattened diaphragm, Rule out Pneumothorax และ Pneumonia)"
+    ],
+    "interventions": [
+      "1. Bronchodilators:\n - Salbutamol 2.5 mg + Ipratropium 0.5 mg พ่น Nebulizer ทุก 20 นาที 3 ครั้ง จากนั้นพ่นทุก 2-4 ชั่วโมงตามอาการ (ขับเคลื่อนด้วย Air compressor หรือ O2 flow ต่ำ)",
+      "2. Systemic Corticosteroids:\n - Methylprednisolone 40 mg IV หรือ Prednisolone 40 mg PO daily (ระยะเวลารวม 5 วัน)",
+      "3. Antibiotics (พิจารณาให้เมื่อมี Purulent sputum หรือมีข้อบ่งชี้ใส่ท่อ/NIV):\n - Co-amoxiclav (Augmentin) 1.2 g IV q 8h หรือ Azithromycin 500 mg PO/IV daily หรือ Ceftriaxone 2 g IV daily",
+      "4. Non-Invasive Ventilation (NIV / BiPAP) - First-line support:\n - ข้อบ่งชี้: มี Respiratory Acidosis (pH < 7.35 และ PaCO2 > 45 mmHg) หรือหอบเหนื่อยรุนแรง\n - ตั้งค่าเริ่มต้น: IPAP 8-12 cmH2O, EPAP 4-5 cmH2O และปรับตามค่า ABG"
+    ],
+    "cautions": [
+      "ห้ามให้ออกซิเจน High-flow (SpO2 > 93-95%) โดยไม่จำเป็น เพราะจะลด Hypoxic drive และเกิด Haldane effect ทำให้ระดับ CO2 ในเลือดคั่งสูงขึ้นจนเกิด CO2 Narcosis และโคม่า",
+      "หากใช้ BiPAP แล้วคนไข้ซึมลง pH ยิ่งต่ำลง หรือไม่ร่วมมือ ให้พิจารณาใส่ท่อช่วยหายใจ (Endotracheal Intubation) ทันที"
+    ]
+  },
+  {
+    "id": "massive_hemoptysis",
+    "category": "Pulmonary Emergency",
+    "title": "Massive Hemoptysis (ไอเป็นเลือดปริมาณมาก)",
+    "keywords": ["hemoptysis", "ไอเป็นเลือด", "massive hemoptysis", "เลือดออกทางเดินหายใจ", "สำลักเลือด", "ไอเป็นเลือดสด"],
+    "initial_actions": [
+      "นิยาม Massive Hemoptysis: ปริมาณเลือดออก >= 100-200 mL ต่อครั้ง หรือ >= 600 mL ใน 24 ชั่วโมง หรือเลือดอุดกั้นทางเดินหายใจจนเกิดภาวะ Hypoxemia",
+      "จัดท่าผู้ป่วย: จัดให้นอนตะแคงเอาปอดข้างที่สงสัยว่ามีพยาธิสภาพหรือเลือดออกลงด้านล่าง (Bleeding side down) เพื่อป้องกันไม่ให้เลือดไหลไปสำลักอุดปอดข้างที่ปกติ",
+      "ประเมิน ABCs ให้ออกซิเจน High-flow และเตรียม Suction ขนาดใหญ่ข้างเตียง",
+      "เปิด IV line ขนาดใหญ่ 2 เส้น, NPO, ตรวจ CBC, Coagulation (PT/INR, PTT), CXR, Type and Screen เลือด"
+    ],
+    "interventions": [
+      "1. Airway Protection (หากหายใจลำบาก เลือดออกมาก หรือระดับความรู้สึกตัวลดลง):\n - ใส่ท่อช่วยหายใจขนาดใหญ่ (เบอร์ >= 8.0-8.5 Fr) เพื่อให้สามารถส่องกล้องดูดลิ่มเลือดได้สะดวก\n - พิจารณาทำ Selective Endobronchial Intubation (ใส่ท่อลึกเข้าไปในปอดข้างที่ไม่ออก) หากไม่สามารถควบคุมการสำลักได้",
+      "2. Hemostatic Agents & Medications:\n - Tranexamic Acid (TXA): 1 g IV ช้าๆ ใน 10 นาที (หรือ 500-1000 mg ผสม NSS 5 mL พ่น Nebulizer ในกรณีเลือดออกไม่หยุด)\n - ให้ยาแก้ไอและยากดอาการกระสับกระส่ายอย่างระมัดระวัง (Codeine / Morphine ขนาดต่ำ)",
+      "3. Definitive Interventions:\n - ปรึกษาอายุรแพทย์โรคปอดทำ Flexible/Rigid Bronchoscopy เพื่อทำ Cold saline lavage, Topical Epinephrine (1:20,000) หรือ Balloon tamponade\n - ปรึกษา Interventional Radiologist ทำ Bronchial Artery Embolization (BAE) หรือศัลยแพทย์ทรวงอกผ่าตัดฉุกเฉิน"
+    ],
+    "cautions": [
+      "สาเหตุการเสียชีวิตส่วนใหญ่ใน Massive Hemoptysis เกิดจากการขาดอากาศหายใจ (Asphyxiation / Airway obstruction) ไม่ใช่จากภาวะช็อกเสียเลือด ดังนั้นการรักษาความโล่งของทางเดินหายใจจึงสำคัญที่สุด",
+      "ห้ามจัดผู้ป่วยนอนหงายราบเด็ดขาดเพราะจะสำลักเลือดลงหลอดลมทั้งสองข้าง"
+    ]
+  },
+  {
+    "id": "severe_pneumonia_ards",
+    "category": "Pulmonary Emergency",
+    "title": "Severe Community-Acquired Pneumonia & ARDS",
+    "keywords": ["pneumonia", "severe cap", "ards", "ปอดอักเสบรุนแรง", "ปอดบวมติดเชื้อ", "consolidation", "bat wing", "bilateral infiltration"],
+    "initial_actions": [
+      "ประเมินความรุนแรงด้วย CURB-65 Score หรือ PSI / SMART-COP criteria",
+      "เกณฑ์ภาพ Chest X-ray:\n - Lobar / Multilobar Consolidation with Air-bronchogram (Pneumonia)\n - Bilateral diffuse alveolar infiltrates โดยไม่พบ Cardiomegaly ชัดเจน (เข้าได้กับ ARDS: Berlin definition)",
+      "ตรวจ Blood/Sputum Culture, Sputum Gram stain, Hemoculture 2 ขวด, และ ABG ทันที"
+    ],
+    "interventions": [
+      "1. Empirical Antibiotics ภายใน 1 ชั่วโมงแรก:\n - Ceftriaxone 2 g IV daily (หรือ Cefotaxime 2 g IV q 8h) ร่วมกับ Azithromycin 500 mg IV daily (หรือ Levofloxacin 750 mg IV daily)\n - หากสงสัย Pseudomonas: Piperacillin/Tazobactam 4.5 g IV q 6h หรือ Meropenem 1 g IV q 8h + Ciprofloxacin 400 mg IV q 12h\n - หากสงสัย MRSA: เพิ่ม Vancomycin 15-20 mg/kg IV q 8-12h",
+      "2. Respiratory Support & ARDS Management:\n - Early High-Flow Nasal Cannula (HFNC) หรือ NIV ในระยะแรก\n - หากต้องใส่ท่อช่วยหายใจ (Mechanical Ventilation) ให้ใช้ Lung-Protective Strategy:\n   * Low Tidal Volume: 4-8 mL/kg of Predicted Body Weight (PBW)\n   * Plateau Pressure (Pplat) <= 30 cmH2O\n   * Titrate PEEP ตามตาราง ARDSNet PEEP/FiO2",
+      "3. Fluid Management: ให้สารน้ำอย่างจำกัด (Conservative Fluid Strategy) เมื่อพ้นระยะช็อก เพื่อลดการซึมของน้ำเข้าเนื้อปอด"
+    ],
+    "cautions": [
+      "ระวังการให้สารน้ำ Crystalloid ปริมาณมากเกินไปในภาวะ ARDS เพราะจะทำให้ Lung Water เพิ่มขึ้นและการแลกเปลี่ยนก๊าซแย่ลงอย่างรวดเร็ว",
+      "ห้ามตั้ง Tidal volume สูง (เกิน 8 mL/kg PBW) ในผู้ป่วย ARDS เพื่อป้องกันภาวะ Volutrauma / Barotrauma"
+    ]
+  },
+  {
+    "id": "tbi_elevated_icp",
+    "category": "Trauma & Emergency Procedures",
+    "title": "Severe Traumatic Brain Injury (TBI) & Increased ICP",
+    "keywords": ["tbi", "head injury", "increased icp", "สมองบวม", "อุบัติเหตุที่ศีรษะ", "mannitol", "hypertonic saline", "anisocoria", "cushing triad"],
+    "initial_actions": [
+      "ประเมิน GCS Score (Severe TBI คือ GCS <= 8 ต้องพิจารณาใส่ท่อช่วยหายใจเพื่อปกป้องทางเดินหายใจทันที)",
+      "ตรวจหา Cushing's Triad (สัญญาณความดันในกะโหลกศีรษะวิกฤต): Hypertension (SBP สูงผิดปกติ), Bradycardia (ชีพจรช้า), Irregular respirations",
+      "ตรวจปฏิกิริยารูม่านตา (Pupils): ประเมิน Anisocoria (ขนาดรูม่านตาไม่เท่ากัน > 1 มม.) หรือ Sluggish/Fixed dilated pupil (Uncal herniation sign)",
+      "รักษาความดันโลหิตและออกซิเจน (Avoid Hypotension & Hypoxia เด็ดขาด):\n - Target SBP >= 100 mmHg (อายุ 50-69 ปี) หรือ SBP >= 110 mmHg (อายุ 15-49 ปี หรือ >= 70 ปี)\n - Target SpO2 >= 95%"
+    ],
+    "interventions": [
+      "1. จัดท่าและการระบายเลือดดำ:\n - ยกหัวเตียงสูง 30 องศา (Head elevation 30°) และจัดคอตรง (Neutral alignment) เพื่อช่วย Venous drainage",
+      "2. Osmotherapy (กรณีมีสัญญาณสมองบวมหรือ Herniation):\n - 3% NaCl (Hypertonic Saline): 250 mL IV bolus ใน 15-30 นาที หรือ 3-5 mL/kg (ทางเลือกแรกในผู้ป่วยที่มีภาวะ Hypotension/ช็อก)\n - หรือ 20% Mannitol: 0.5 - 1 g/kg (ประมาณ 100-200 mL) IV drip ใน 15-20 นาที (ใช้เฉพาะเมื่อ BP คงที่ / SBP > 100-110 mmHg)",
+      "3. Mechanical Ventilation Control:\n - รักษา Normocapnia (Target PaCO2 35-40 mmHg)\n - หลีกเลี่ยง Prophylactic Hyperventilation ยกเว้นในกรณีที่มี Impending brain herniation ฉุกเฉิน ให้ทำ Mild hyperventilation ชั่วคราว (PaCO2 30-35 mmHg) ระหว่างรอผ่าตัด",
+      "4. Seizure Prophylaxis:\n - Levetiracetam (Keppra) 1,000-2,000 mg IV Drip หรือ Phenytoin (Dilantin) 15-20 mg/kg IV (Drip ไม่เกิน 50 mg/min)",
+      "5. ส่ง Urgent Non-contrast Brain CT และปรึกษาศัลยแพทย์ระบบประสาท (Neurosurgeon) ทันที"
+    ],
+    "cautions": [
+      "ห้ามใช้ยากลุ่ม Steroids (เช่น Dexamethasone, Methylprednisolone) ในผู้ป่วย Traumatic Brain Injury เด็ดขาด (CRASH Trial ยืนยันว่าเพิ่มอัตราการเสียชีวิต)",
+      "ห้ามใช้ Mannitol ในผู้ป่วยที่มีภาวะ Hypotension (ความดันตก) หรือ Hypovolemic Shock เพราะจะทำให้ความดันย่อยยับลงจาก Osmotic diuresis",
+      "ห้ามให้น้ำเกลือชนิด Hypotonic (เช่น 5% D/N/2 หรือ D5W) เพราะจะทำให้สมองบวมรุนแรงขึ้น (ใช้ 0.9% NSS หรือ Plasmalyte เท่านั้น)"
+    ]
+  },
+  {
+    "id": "damage_control_mtp",
+    "category": "Trauma & Emergency Procedures",
+    "title": "Damage Control Resuscitation & Massive Transfusion Protocol (MTP)",
+    "keywords": ["mtp", "massive transfusion", "damage control", "เลือดออกรุนแรง", "ให้เลือดฉุกเฉิน", "tranexamic acid trauma", "lethal triad"],
+    "initial_actions": [
+      "ประเมินสัญญาณช็อกรุนแรงและการสูญเสียเลือด (ABC Score >= 2: SBP <= 90, HR >= 120, FAST positive, Penetrating trauma mechanism)",
+      "ควบคุมจุดเลือดออกภายนอกที่มองเห็นได้ทันที (Direct pressure, Wound packing, Combat Tourniquet ในรอยโรคแขนขา)",
+      "ป้องกัน 'Lethal Triad of Trauma' ตั้งแต่นาทีแรก: Hypothermia (ห่มผ้าอุ่น, อุ่นสารน้ำ), Acidosis, Coagulopathy",
+      "เปิด IV line ขนาดใหญ่ (14-16G) 2 เส้น หรือทำ Intraosseous (IO) / Central line"
+    ],
+    "interventions": [
+      "1. Tranexamic Acid (TXA) - CRASH-2 Protocol:\n - ให้ TXA 1 g IV ใน 10 นาทีแรกทันที (ต้องให้ภายใน 3 ชั่วโมงแรกหลังเกิดเหตุ)\n - ตามด้วย TXA 1 g IV infusion ใน 8 ชั่วโมงถัดไป",
+      "2. Massive Transfusion Protocol (MTP Pack Ratio 1:1:1):\n - สั่งเปิด MTP ส่งเลือดชุดแรก (Emergency Uncrossed O-negative/O-positive PRBC + Plasma/FFP + Platelets ในอัตราส่วน 1:1:1 หรือ 4:4:1 pack)\n - ให้ Calcium Gluconate 1 g (1 amp) IV ทุกๆ การให้เลือดครบ 4 ยูนิต เพื่อป้องกัน Hypocalcemia จากสาร Citrate ในถุงเลือด",
+      "3. Permissive Hypotension (Damage Control Strategy):\n - ควบคุมสารน้ำให้พอรักษา Radial pulse หรือ Target SBP 80-90 mmHg (MAP 50-60 mmHg) จนกว่าจะผ่าตัดห้ามเลือดสำเร็จ (ยกเว้นผู้ป่วยที่มี Severe TBI ต้องรักษา SBP >= 100-110 mmHg)"
+    ],
+    "cautions": [
+      "ห้ามให้ TXA ช้ากว่า 3 ชั่วโมงหลังการบาดเจ็บ เพราะมีผลการศึกษาพบว่าจะเพิ่มความเสี่ยงต่อการเสียชีวิตและภาวะลิ่มเลือดอุดตัน",
+      "หลีกเลี่ยงการเติมสารน้ำ Crystalloid (NSS / RLS) ปริมาณมากเกินไป (Large-volume crystalloid) เพราะจะทำให้เกิด Dilutional Coagulopathy และชะล้างก้อน Clot ที่กำลังแข็งตัว"
+    ]
+  },
+  {
+    "id": "pelvic_fracture_trauma",
+    "category": "Trauma & Emergency Procedures",
+    "title": "Unstable Pelvic Fracture (กระดูกเชิงกรานหักไม่คงที่)",
+    "keywords": ["pelvic fracture", "เชิงกรานหัก", "open book fracture", "pelvic binder", "เลือดออกในช่องท้อง", "retroperitoneal hemorrhage"],
+    "initial_actions": [
+      "ตรวจร่างกายประเมินความคงที่ของกระดูกเชิงกราน (Gentle Pelvic Compression เพียงครั้งเดียว ห้ามขยับโยกซ้ำๆ)",
+      "ตรวจหา Blood at urethral meatus, Scrotal/Perineal hematoma (High-riding prostate จาก DRE) ก่อนพิจารณาใส่ Foley catheter",
+      "ส่ง Urgent Pelvis AP X-ray และทำ Bedside FAST scan (E-FAST) เพื่อแยกภาวะเลือดออกในช่องท้อง (Intraperitoneal) กับหลังเยื่อบุช่องท้อง (Retroperitoneal)"
+    ],
+    "interventions": [
+      "1. Pelvic Circumferential Compression (Pelvic Binder):\n - ใส่ Commercial Pelvic Binder หรือใช้ผ้าปูที่นอน (Pelvic Sheet Wrap) รัดตรงระดับ **Greater Trochanters** (ไม่ใช่ที่เอวหรือ Ilia crest)\n - มัดผูกดึงให้กระชับเพื่อลดปริมาตรช่องเชิงกราน (Tamponade effect) และป้องกันการเคลื่อนที่ของกระดูก",
+      "2. Hemodynamic Resuscitation:\n - เริ่ม Massive Transfusion Protocol (MTP) และให้ TXA 1 g IV ทันที\n - หาก FAST scan เป็น Negative แต่ผู้ป่วยยังคงมีสัญญาณช็อก ให้สงสัย Severe Retroperitoneal bleeding จาก Pelvic venous plexus/internal iliac branches",
+      "3. Definitive Hemostasis:\n - ปรึกษาศัลยแพทย์กระดูก (Orthopedics) และ Interventional Radiologist ทำ Transcatheter Angioembolization (TAE) หรือทำ Pre-peritoneal Pelvic Packing (PPP)"
+    ],
+    "cautions": [
+      "ห้ามทำการตรวจขยับกระดูกเชิงกราน (Pelvic rocking / Repetitive manipulation) ซ้ำๆ เพราะจะทำให้ลิ่มเลือดที่กำลังอุดหลอดเลือดดำใน Retroperitoneum หลุดออกและเสียเลือดรุนแรง",
+      "ตำแหน่งรัด Pelvic Binder ต้องอยู่ที่ปุ่มกระดูกสะโพก (Greater Trochanter / Pubic symphysis) หากรัดสูงบริเวณเอวจะไม่ช่วยลดปริมาตรเชิงกรานและอาจกดทับอวัยวะภายใน"
+    ]
+  },
+  {
+    "id": "major_burns_resuscitation",
+    "category": "Trauma & Emergency Procedures",
+    "title": "Major Burns & Parkland Fluid Resuscitation",
+    "keywords": ["burn", "แผลไฟไหม้", "น้ำร้อนลวก", "parkland formula", "inhalation injury", "rule of nines", "escharotomy", "ไฟลวก"],
+    "initial_actions": [
+      "ประเมิน Inhalation Injury (ภาวะทางเดินหายใจถูกทำลายจากความร้อน/ควัน):\n - สัญญาณเตือน: ขนจมูกไหม้เกรียม (Singeing of facial/nasal hair), เขม่าในคอ/เสมหะดำ (Carbonaceous sputum), เสียงแหบ (Hoarseness), Stridor\n - หากมีสัญญาณเหล่านี้: ต้องใส่ท่อช่วยหายใจ (Early Intubation) ทันที ก่อนที่ทางเดินหายใจจะบวมปิดสนิท",
+      "คำนวณพื้นที่ผิวแผลไฟไหม้ (%TBSA) โดยใช้ Rule of Nines (นับเฉพาะแผลระดับ 2nd degree ขึ้นไป):\n - หัวและคอ 9%, แขนข้างละ 9%, ลำตัวด้านหน้า 18%, ลำตัวด้านหลัง 18%, ขาข้างละ 18%, ฝีเย็บ/อวัยวะเพศ 1% (หรือใช้ฝ่ามือผู้ป่วยคิดเป็น 1% TBSA)"
+    ],
+    "interventions": [
+      "1. Fluid Resuscitation (Modified Parkland Formula):\n - ปริมาตรสารน้ำรวมใน 24 ชั่วโมงแรก = **4 mL x น้ำหนักตัว (kg) x %TBSA**\n - ชนิดสารน้ำ: Ringer's Lactate (RLS) หรือ Acetar (ห้ามใช้ NSS ปริมาณมากเพราะเกิด Hyperchloremic acidosis)\n - การแบ่งให้:\n   * ให้ **ครึ่งหนึ่งของปริมาตรรวม ใน 8 ชั่วโมงแรก** (นับเวลาตั้งแต่เริ่มเกิดเหตุไฟไหม้ ไม่ใช่เวลาที่มาถึง รพ.)\n   * ให้อีก **ครึ่งหนึ่งที่เหลือ ใน 16 ชั่วโมงถัดมา**",
+      "2. Titration & Monitoring:\n - ใส่ Foley catheter เพื่อติดตาม Urine Output ทุก 1 ชั่วโมง\n - Target Urine Output ในผู้ใหญ่: **0.5 - 1.0 mL/kg/hr** (ประมาณ 30-50 mL/hr) ปรับเพิ่ม/ลดอัตราหยดสารน้ำตามปริมาณปัสสาวะ\n - Target ในเด็ก: 1.0 - 1.5 mL/kg/hr",
+      "3. Pain Control & Tetanus: ให้ Morphine / Fentanyl IV titration และฉีด Tetanus Toxoid / TIG ตามประวัติวัคซีน",
+      "4. Emergency Escharotomy: พิจารณาทำในกรณี Circumferential Full-thickness burns บริเวณหน้าอก (ขัดขวางการหายใจ) หรือแขนขา (เสี่ยงต่อ Compartment Syndrome)"
+    ],
+    "cautions": [
+      "หลีกเลี่ยงการใช้น้ำเย็นจัดหรือน้ำแข็งประคบแผลเป็นเวลานาน เพราะจะทำให้หลอดเลือดหดตัว เนื้อเยื่อขาดเลือดเพิ่มขึ้น และเกิด Hypothermia รุนแรง",
+      "ห้ามใช้ขี้ผึ้งปฏิชีวนะสีทึบหรือสารเคมีทาแผลในระยะแรกก่อนแพทย์ประเมินระดับความลึกของแผลเสร็จสิ้น"
+    ]
+  },
+  {
+    "id": "cardiac_tamponade_trauma",
+    "category": "Trauma & Emergency Procedures",
+    "title": "Cardiac Tamponade (ภาวะบีบรัดหัวใจฉุกเฉินจากบาดเจ็บ)",
+    "keywords": ["cardiac tamponade", "tamponade", "beck triad", "pericardiocentesis", "น้ำ/เลือดในถุงหุ้มหัวใจ", "pulsus paradoxus", "subxiphoid"],
+    "initial_actions": [
+      "ประเมิน Beck's Triad (อาการคลาสสิก 3 อย่าง):\n 1. Hypotension (ความดันโลหิตตกอย่างรวดเร็ว)\n 2. Distended Neck Veins (หลอดเลือดดำที่คอโป่งนูน - JVD)\n 3. Muffled Heart Sounds (เสียงหัวใจเบาลง ฟังไม่ค่อยชัด)",
+      "ตรวจพบ Pulsus Paradoxus (SBP ลดลงมากกว่า 10 mmHg ขณะหายใจเข้า)",
+      "ทำ Bedside E-FAST (Subxiphoid view หรือ Parasternal view) เพื่อตรวจหาก้อนเลือดหรือ Anechoic fluid ใน Pericardial space และดู Right Ventricular Diastolic Collapse",
+      "ให้ออกซิเจน High-flow และเปิดเส้น IV line ให้สารน้ำ Crystalloid bolus ชั่วคราวเพื่อเพิ่ม Preload"
+    ],
+    "interventions": [
+      "1. Emergency Pericardiocentesis (กรณีผู้ป่วย Arrest หรือความดันตกวิกฤตไม่ตอบสนอง):\n - ใช้อุปกรณ์ Angiocath เบอร์ 16-18G ยาว 8-12 ซม. ต่อกับ Syringe 20-50 mL และ 3-way stopcock (หากมี Bedside Ultrasound ให้ทำ Ultrasound-guided)\n - Subxiphoid approach: แทงเข็มที่มุมระหว่าง Xiphoid process กับขอบกระดูกซี่โครงด้านซ้าย (Left Costal Margin) ทำมุม 30-45 องศากับผิวหนัง ชี้ปลายเข็มไปยัง Left Mid-Clavicle / สะบักซ้าย พร้อมดูด Syringe ตลอดเวลา\n - เมื่อดูดได้เลือด (เพียง 10-20 mL ก็สามารถช่วยกู้ Hemodynamics กลับคืนมาได้) ให้หยุดและยึดท่อไว้",
+      "2. Emergency Department Thoracotomy (EDT) / Resuscitative Thoracotomy:\n - ในผู้ป่วย Penetrating Chest Trauma ที่เพิ่งมี Cardiac Arrest หรือสัญญาณชีพหายไปต่อหน้าไม่เกิน 10-15 นาที เปิดผ่าตัด Left Anterolateral Thoracotomy ที่ 5th ICS ทันที เพื่อเปิด Pericardium และเย็บซ่อมแผลหัวใจ"
+    ],
+    "cautions": [
+      "ห้ามให้ยากลุ่ม Vasodilators หรือ Diuretics ในผู้ป่วย Cardiac Tamponade เด็ดขาด เพราะจะทำให้ Cardiac output ลดลงอย่างรุนแรงจนหัวใจหยุดเต้น",
+      "การดูด Pericardiocentesis เป็นเพียงการซื้อเวลา (Temporizing measure) ผู้ป่วยบาดเจ็บที่มี Hemopericardium จำเป็นต้องได้รับการผ่าตัดสำรวจในห้องผ่าตัดทันที"
+    ]
+  },
+  {
+    "id": "paracetamol_overdose",
+    "category": "Toxicology & Envenomation",
+    "title": "Paracetamol Overdose & N-Acetylcysteine (NAC) Protocol",
+    "keywords": ["paracetamol", "tylenol", "nac", "n-acetylcysteine", "พาราเซตามอล", "กินยาพาราเกินขนาด", "rumack matthew", "พิษพารา"],
+    "initial_actions": [
+      "ซักประวัติเวลาที่กินยา, ปริมาณยา (ขนาดยาที่เป็นพิษเฉียบพลัน: >= 150-200 mg/kg ในเด็ก หรือ >= 7.5-10 g ในผู้ใหญ่), และรูปแบบยา (เม็ดธรรมดา vs Extended Release)",
+      "เจาะ Serum Paracetamol Concentration ที่เวลา **4 ชั่วโมงหลังกินยา** (หากมาถึงก่อน 4 ชม. ให้รอเจาะที่ครบ 4 ชม. ไม่เจาะก่อนเพราะยายังดูดซึมไม่สมบูรณ์) และพล็อตลงใน Rumack-Matthew Nomogram",
+      "ส่งตรวจ Baseline LFT (AST/ALT), PT/INR, BUN/Cr, Electrolytes"
+    ],
+    "interventions": [
+      "1. Gastrointestinal Decontamination: ให้ Activated Charcoal 1 g/kg (50 g ในผู้ใหญ่) เฉพาะกรณีที่ผู้ป่วยกินยามาภายใน 1-2 ชั่วโมงแรกและไม่มีข้อห้าม",
+      "2. ข้อบ่งชี้ในการเริ่ม N-Acetylcysteine (NAC):\n - Serum Paracetamol อยู่เหนือเส้น Treatment Line ใน Rumack-Matthew Nomogram\n - กินยาเกินขนาดชัดเจนและมาถึง รพ. ช้าเกิน 8 ชั่วโมง หรือมีภาวะตับวายเฉียบพลัน (Hepatotoxicity: AST/ALT สูง, Coagulopathy)\n - กินยาไม่ทราบเวลาแน่ชัดแต่ระดับยาตรวจพบได้",
+      "3. Intravenous NAC Protocol (3-Bag 21-Hour Regimen):\n - Bag 1 (Loading): 150 mg/kg ใน 5% D5W 200 mL IV Drip ใน 1 ชั่วโมง\n - Bag 2: 50 mg/kg ใน 5% D5W 500 mL IV Drip ใน 4 ชั่วโมง\n - Bag 3: 100 mg/kg ใน 5% D5W 1,000 mL IV Drip ใน 16 ชั่วโมง\n - รวมระยะเวลา 21 ชั่วโมง (ขนาดยารวม 300 mg/kg)",
+      "4. Oral NAC Regimen (กรณีไม่มี IV NAC หรือแพ้รุนแรง):\n - Loading dose: 140 mg/kg PO\n - ตามด้วย Maintenance: 70 mg/kg PO ทุก 4 ชั่วโมง รวม 17 doses (รวม 72 ชั่วโมง)"
+    ],
+    "cautions": [
+      "หากผู้ป่วยมีประวัติกินยาเกินขนาดเกิน 8 ชั่วโมง ให้เริ่มยา NAC ทันทีโดยไม่ต้องรอผลตรวจระดับยาในเลือด",
+      "ระวัง Anaphylactoid Reaction จาก IV NAC (ผื่นแดง คัน แน่นหน้าอก มักเกิดช่วง Bag 1): หากเกิด ให้หยุดยาชั่วคราว ฉีด Chlorpheniramine 10 mg IV และพิจารณาปรับลดอัตราการหยดยาให้ช้าลงแล้วให้ต่อได้"
+    ]
+  },
+  {
+    "id": "organophosphate_poisoning",
+    "category": "Toxicology & Envenomation",
+    "title": "Organophosphate & Carbamate Poisoning",
+    "keywords": ["organophosphate", "carbamate", "ยาฆ่าหญ้า", "ยาฆ่าแมลง", "cholinergic toxidrome", "sludgem", "atropine", "2-pam", "pralidoxime"],
+    "initial_actions": [
+      "Decontamination & Personal Protection: บุคลากรทางการแพทย์ต้องสวมชุด PPE, ถุงมือยาง 2 ชั้น ถอดเสื้อผ้าผู้ป่วยทิ้งลงถุงปิดสนิท และล้างตัวด้วยน้ำและสบู่ทันที",
+      "ประเมิน Cholinergic Toxidrome (DUMBELS / SLUDGEM):\n - Diarrhea, Urination, Miosis (รูม่านตาหรี่เล็ก Pinpoint), Bradycardia, **Bronchorrhea & Bronchospasm (เสมหะท่วมปอด หายใจมีเสียง Crepitation/Wheezing)**, Emesis, Lacrimation, Salivation",
+      "ดูดเสมหะ (Suction) ให้ทางเดินหายใจโล่ง และให้ออกซิเจน 100% High-flow ทันที"
+    ],
+    "interventions": [
+      "1. Atropinization (หัวใจหลักคือการแก้ไข Bronchorrhea):\n - ให้ Atropine 2-5 mg IV push ทันที (เด็ก: 0.05 mg/kg)\n - ประเมินซ้ำทุก 3-5 นาที หากเสมหะในปอดยังไม่แห้ง ให้เพิ่มขนาดยาเป็น 2 เท่า (Double dose: เช่น 2 -> 4 -> 8 -> 16 mg) จนกว่าจะเข้าสู่ภาวะ **Full Atropinization**\n - เป้าหมาย Full Atropinization (Target Endpoints):\n   * **เสียงเสมหะในปอดแห้งสนิท (Clear chest on auscultation)**\n   * ชีพจร HR > 80 bpm\n   * ความดัน SBP > 90 mmHg\n   * ผิวหนังและรักแร้แห้ง (Dry axillae)\n - เมื่อได้ Target ให้เริ่ม Atropine IV Infusion ในอัตรา 10-20% ของขนาดยารวมที่ใช้ทำให้ Atropinize ต่อชั่วโมง",
+      "2. Oxime Therapy (Pralidoxime / 2-PAM) - ให้เฉพาะ Organophosphate:\n - Pralidoxime (2-PAM) 1-2 g IV ผสมใน NSS 100 mL Drip ใน 30 นาที (เด็ก 25-50 mg/kg)\n - ตามด้วย Continuous IV infusion 500 mg/hr (เด็ก 10-20 mg/kg/hr) ให้เร็วที่สุดก่อนเกิดภาวะ Aging ของเอนไซม์",
+      "3. Control Agitation / Seizure: Diazepam 5-10 mg IV push ช้าๆ"
+    ],
+    "cautions": [
+      "ห้ามฉีด Atropine ในขณะที่ผู้ป่วยยังมีภาวะ Hypoxia รุนแรง (ขาดออกซิเจน) เพราะจะกระตุ้นให้เกิด Ventricular Fibrillation ได้ง่าย ต้องให้ออกซิเจนและดูดเสมหะคู่กันเสมอ",
+      "รูม่านตาขยาย (Mydriasis) **ไม่ใช่** ตัวชี้วัดว่า Atropinize เพียงพอ ให้ยึดเสียงเสมหะในปอดแห้ง (Clear lung) เป็นเกณฑ์สำคัญที่สุด"
+    ]
+  },
+  {
+    "id": "opioid_overdose",
+    "category": "Toxicology & Envenomation",
+    "title": "Acute Opioid Overdose & Naloxone Titration",
+    "keywords": ["opioid overdose", "morphine overdose", "tramadol", "naloxone", "narcan", "มอร์ฟีนเกินขนาด", "ทรามาดอล", "pin-point pupils", "กดการหายใจ"],
+    "initial_actions": [
+      "ประเมิน Opioid Toxidrome Triad: รูม่านตาหรี่เล็กเท่ารูเข็ม (Pinpoint pupils), ซึมลึก/หมดสติ (CNS depression), และ **กดการหายใจรุนแรง (Respiratory depression: RR < 8-10 หรือ Apnea)**",
+      "ช่วยหายใจด้วย Bag-Valve-Mask ต่อออกซิเจน 100% ทันทีก่อนให้ยาฉีด",
+      "ตรวจวัด DTX เพื่อแยกภาวะ Hypoglycemia"
+    ],
+    "interventions": [
+      "1. Naloxone (Narcan) Titration:\n - ผู้ป่วยหยุดหายใจ/โคม่า: ให้ Naloxone 0.4 - 2 mg IV/IM/SC/IN push ทันที ซ้ำได้ทุก 2-3 นาทีจนกว่าจะกลับมาหายใจเอง (ขนาดยารวมสูงสุด 10 mg)\n - ผู้ป่วยที่ยังหายใจได้ช้าๆ หรือใช้ยากลุ่ม Opioids เรื้อรัง (เพื่อเลี่ยง Acute Withdrawal):\n   * ให้ Naloxone 0.04 - 0.1 mg IV ค่อยๆ Titrate ทุก 2-3 นาที\n   * **เป้าหมาย: ฟื้นฟูอัตราการหายใจให้เพียงพอ (RR > 10-12 ครั้ง/นาที) ไม่จำเป็นต้องปลุกให้ผู้ป่วยตื่นรู้ตัวเต็มที่**",
+      "2. Naloxone Continuous Infusion:\n - หากหมดฤทธิ์แล้วกลับมาซึมใหม่ (เนื่องจาก Opioid บางชนิดมี Half-life ยาว เช่น Methadone, Fentanyl patch, Tramadol)\n - ตั้ง Drip อัตรา: **2/3 ของขนาดยา Naloxone ที่ใช้ปลุกฟื้นในตอนแรกต่อชั่วโมง**"
+    ],
+    "cautions": [
+      "ค่าครึ่งชีวิตของ Naloxone สั้นมาก (30-90 นาที) สั้นกว่าสารกลุ่ม Opioids ส่วนใหญ่ ดังนั้นต้อง Observe ในห้องฉุกเฉินอย่างน้อย 4-6 ชั่วโมงขึ้นไปเพื่อเฝ้าระวังอาการกดการหายใจกำเริบซ้ำ",
+      "การฉีด Naloxone ขนาดสูงรวดเดียวในผู้ป่วยติดฝิ่น/มอร์ฟีนเรื้อรัง จะทำให้เกิด Severe Acute Opioid Withdrawal (อาเจียน ชัก ปอดบวมน้ำฉับพลันจาก Sympathetic storm)"
+    ]
+  },
+  {
+    "id": "snakebite_envenomation",
+    "category": "Toxicology & Envenomation",
+    "title": "Snakebite Envenomation & Antivenom Guidelines",
+    "keywords": ["snakebite", "งูกัด", "งูเห่า", "งูจงอาง", "งูเขียวหางไหม้", "งูกะปะ", "งูแมวเซา", "เซรุ่มแก้พิษงู", "antivenom", "20wbct", "vct"],
+    "initial_actions": [
+      "Immobilization: ดามอวัยวะข้างที่ถูกกัดด้วยเฝือกชั่วคราวให้อยู่นิ่งในระดับต่ำกว่าหัวใจ",
+      "จำแนกกลุ่มพิษงู (Toxin Classification):\n - **พิษต่อระบบประสาท (Neurotoxin):** งูเห่า (Cobra), งูจงอาง (King Cobra), งูสามเหลี่ยม (Banded Krait), งูทับสมิงคลา (Malayan Krait)\n - **พิษต่อระบบโลหิต (Hematotoxin):** งูเขียวหางไหม้ (Green Pit Viper), งูกะปะ (Malayan Pit Viper), งูแมวเซา (Russell's Viper)\n - **พิษต่อกล้ามเนื้อ (Myotoxin):** งูทะเล (Sea Snake)",
+      "การตรวจทางห้องปฏิบัติการ:\n - กลุ่มพิษต่อโลหิต: ตรวจ **20-minute Whole Blood Clotting Time (20WBCT)** หรือ VCT ทันที และตรวจซ้ำทุก 4-6 ชั่วโมง, CBC (Platelet), PT/INR, BUN/Cr, Electrolytes\n - กลุ่มพิษต่อระบบประสาท: ตรวจประเมินทางเดินหายใจและแรงกล้ามเนื้อ (Single Breath Count, Ptosis)"
+    ],
+    "interventions": [
+      "1. ข้อบ่งชี้ในการให้เซรุ่มต้านพิษงูเฉพาะชนิด (Specific Monovalent Antivenom):\n - **กลุ่มพิษต่อระบบประสาท:** มีอาการหนังตาตก (Ptosis), กลืนลำบาก, พูดไม่ชัด, หรือกล้ามเนื้อหายใจอ่อนแรง -> ให้เซรุ่ม 5-10 vials ผสม NSS 100 mL IV Drip ใน 30-60 นาที และเตรียมพร้อมใส่ท่อช่วยหายใจ\n - **กลุ่มพิษต่อระบบโลหิต:** มีอาการเลือดออกผิดปกติทั้งตัว (Systemic bleeding), ผล 20WBCT ไม่แข็งตัว (Incoagulable) หรือ VCT > 30 นาที, เกล็ดเลือด < 50,000 /uL, หรือแผลบวมลามเร็วเกิน 1 ข้อต่อใหญ่ใน 24 ชม. -> ให้เซรุ่ม 3-5 vials IV Drip ใน 30-60 นาที",
+      "2. การป้องกันภาวะแพ้เซรุ่ม (Antivenom Premedication):\n - พิจารณาฉีด Adrenaline (1:1000) 0.25 mg SC/IM หรือ CPM 10 mg IV + Hydrocortisone 100 mg IV ก่อนให้เซรุ่ม",
+      "3. ระงับปวด: Paracetamol หรือ Tramadol IV (หลีกเลี่ยง NSAIDs และ Aspirin ในกลุ่มพิษต่อโลหิต)"
+    ],
+    "cautions": [
+      "ห้ามทำการขันชะเนาะ (Tourniquet) แน่นจนหลอดเลือดแดงขาดเลือดเด็ดขาด และห้ามกรีด มีดผ่า ดูดเลือด หรือพอกสมุนไพรที่แผล",
+      "หากผู้ป่วยถูกงูเห่ากัดและมีภาวะแผลเนื้อตาย (Tissue Necrosis) ห้ามรีบทำ Debridement ในระยะเฉียบพลัน ควรรอให้ขอบเขตเนื้อตายชัดเจนและไม่มีภาวะ Bleeding ก่อน"
+    ]
+  },
+  {
+    "id": "methanol_toxicity",
+    "category": "Toxicology & Envenomation",
+    "title": "Methanol Poisoning (ภาวะพิษจากเมทานอล / สุราเถื่อน)",
+    "keywords": ["methanol", "เมทานอล", "สุราเถื่อน", "เหล้าต้ม", "ตาพร่ามัว", "high anion gap", "fomepizole", "ethanol drip", "ฟอร์มิก"],
+    "initial_actions": [
+      "ซักประวัติการดื่มเหล้าขาว เหล้าเถื่อน หรือยาดองสูตรไม่ผ่านการรับรอง",
+      "ตรวจหาอาการสำคัญ: ปวดศีรษะ, คลื่นไส้อาเจียนรุนแรง, **ตามัวลงฉับพลัน มองเห็นภาพเหมือนหิมะตก (Snowfield vision)**, สับสน โคม่า",
+      "เจาะตรวจ Arterial Blood Gas (ABG) พบ **Severe High Anion Gap Metabolic Acidosis (HAGMA)** ร่วมกับ Osmolar Gap สูงผิดปกติ"
+    ],
+    "interventions": [
+      "1. Antidote Therapy (ยับยั้งเอนไซม์ Alcohol Dehydrogenase):\n - **Fomepizole (4-MP) - First line:** Loading dose 15 mg/kg IV ใน 30 นาที ตามด้วย 10 mg/kg ทุก 12 ชั่วโมง\n - **Ethanol Therapy (ทางเลือกเมื่อไม่มี Fomepizole):** ให้ 10% Ethanol IV หรือ 40% Oral Ethanol (เหล้าขาว/สุรากลั่น 40 ดีกรี)\n   * Loading: เหล้าขาว 40 ดีกรี 1.5 - 2 mL/kg ผสมน้ำหวานดื่ม\n   * Maintenance: 0.2 - 0.5 mL/kg/hr เพื่อรักษา Target Blood Ethanol Level อยู่ที่ 100 - 150 mg/dL",
+      "2. Sodium Bicarbonate: 7.5% NaHCO3 50-100 mEq IV Drip เพื่อรักษาภาวะ Metabolic Acidosis (Target Blood pH > 7.35)",
+      "3. Cofactor Therapy: Folic acid (หรือ Folinic acid) 50 mg IV ทุก 4-6 ชั่วโมง เพื่อเร่งการสลาย Formic acid",
+      "4. Emergency Hemodialysis (ล้างไตฉุกเฉิน) - ข้อบ่งชี้:\n - มีภาวะ Severe Acidosis (pH < 7.25-7.30) ที่แก้ไม่ขึ้น\n - มีอาการทางสายตา (Visual disturbance / ตามัว)\n - ระดับ Methanol ในเลือด > 50 mg/dL หรือมีไตวายเฉียบพลันร่วมด้วย"
+    ],
+    "cautions": [
+      "สารพิษหลักของ Methanol คือ Formic acid ซึ่งทำลายเซลล์ประสาทตาทำให้ตาบอดถาวร และทำให้เกิด Basal ganglia necrosis (Putaminal necrosis) ต้องรีบล้างไตฉุกเฉินทันทีที่มีข้อบ่งชี้",
+      "ในระหว่างทำ Hemodialysis ระดับ Ethanol หรือ Fomepizole ในเลือดจะถูกขับออกไปด้วย จึงต้องเพิ่มขนาดยา Antidote ชดเชยในระหว่างการฟอกเลือด"
+    ]
+  },
+  {
+    "id": "acute_ischemic_stroke",
+    "category": "Neurology & Metabolic Emergency",
+    "title": "Acute Ischemic Stroke & Stroke Fast Track (rtPA Protocol)",
+    "keywords": ["stroke", "ischemic stroke", "stroke fast track", "rtpa", "alteplase", "ปากเบี้ยว แขนขาอ่อนแรง", "พูดไม่ชัด", "nihss"],
+    "initial_actions": [
+      "ตรวจคัดกรอง FAST Assessment (Face drooping, Arm weakness, Speech difficulty, Time to onset) และบันทึก 'Last Known Normal' (เวลาที่เห็นผู้ป่วยปกติครั้งสุดท้าย) ทันที",
+      "ส่ง Urgent Non-contrast Brain CT scan ทันที (Door-to-CT < 25 นาที, Door-to-Needle < 45 นาที)",
+      "ตรวจวัด DTX ทันที (รักษาหาก < 60 mg/dL เพื่อแยกภาวะ Hypoglycemia mimicker)",
+      "ประเมิน NIHSS Score และตรวจสอบข้อบ่งชี้/ข้อห้ามของการให้ยาฉีดสลายลิ่มเลือด (Fibrinolytic Checklist)"
+    ],
+    "interventions": [
+      "1. การควบคุมความดันโลหิตก่อนให้ยา rtPA:\n - หาก BP > 185/110 mmHg ให้ Nicardipine IV infusion (เริ่ม 5 mg/hr titrate) หรือ Labetalol 10-20 mg IV push เพื่อกดความดันให้อยู่ต่ำกว่า 185/110 mmHg ก่อนเริ่มยา",
+      "2. Intravenous Thrombolysis (rtPA / Alteplase) - ภายใน Window 4.5 ชั่วโมง:\n - ขนาดยารวม: **0.9 mg/kg** (ขนาดยาสูงสุดไม่เกิน 90 mg)\n - วิธีบริหาร: **10% ของขนาดยารวม ฉีด IV Bolus ใน 1 นาที**, ส่วนที่เหลืออีก **90% ให้ IV Drip ใน 60 นาที**",
+      "3. การติดตามหลังให้ rtPA:\n - วัด BP และประเมิน Neurological sign ทุก 15 นาที ใน 2 ชม.แรก -> ทุก 30 นาที ใน 6 ชม.ถัดไป -> ทุก 1 ชม. จนครบ 24 ชม.\n - รักษา Target BP ใน 24 ชั่วโมงแรกให้ **ต่ำกว่า 180/105 mmHg** เสมอ",
+      "4. Endovascular Thrombectomy (EVT): พิจารณาใน Large Vessel Occlusion (LVO) ภายในระยะเวลา 6-24 ชั่วโมงตามเกณฑ์ภาพ CT Angiography"
+    ],
+    "cautions": [
+      "ห้ามให้ยาต้านเกล็ดเลือด (Aspirin/Clopidogrel) หรือยากลุ่ม Anticoagulants ภายใน 24 ชั่วโมงแรกหลังได้รับยา rtPA",
+      "หากผู้ป่วยมีอาการปวดศีรษะรุนแรงเฉียบพลัน ความดันพุ่งสูง คลื่นไส้อาเจียน หรือระดับความรู้สึกตัวลดลงระหว่างให้ยา rtPA ให้หยุดการให้ยาทันที และส่ง Urgent CT Brain เพื่อตรวจหาภาวะ Intracerebral Hemorrhage"
+    ]
+  },
+  {
+    "id": "status_epilepticus",
+    "category": "Neurology & Metabolic Emergency",
+    "title": "Status Epilepticus (ภาวะชักต่อเนื่องฉุกเฉิน)",
+    "keywords": ["seizure", "status epilepticus", "ชักเกร็ง", "ชักไม่หยุด", "lorazepam", "diazepam", "midazolam", "phenytoin", "keppra"],
+    "initial_actions": [
+      "นิยาม: มีอาการชักเกร็งกระตุกต่อเนื่องนานเกิน 5 นาที หรือชักซ้ำหลายครั้งโดยที่ระดับความรู้สึกตัวไม่กลับมาเป็นปกติระหว่างช่วงที่ชัก",
+      "ประเมิน ABCs, ให้ออกซิเจน 100% High-flow, จัดท่านอนตะแคงดูดเสมหะ (Suction) ป้องกันการสำลัก (ห้ามใช้อุปกรณ์งัดปาก)",
+      "เปิดเส้น IV line, เจาะ DTX ทันที (หากน้ำตาลต่ำให้ 50% Glucose 50 mL IV + Thiamine 100 mg IV)"
+    ],
+    "interventions": [
+      "1. Phase 1 (0-5 นาทีแรก) - First-line Benzodiazepines:\n - **Diazepam:** 10 mg IV push ช้าๆ ใน 2 นาที (เด็ก: 0.2-0.3 mg/kg) ซ้ำได้อีก 1 ครั้งที่ 5 นาที\n - **Lorazepam (หากมี):** 4 mg IV push ช้าๆ (เด็ก: 0.1 mg/kg)\n - **Midazolam (กรณีไม่มีเส้น IV):** 10 mg IM (น้ำหนัก > 40 kg) หรือ 5 mg IM (น้ำหนัก 13-40 kg) หรือหยดทางจมูก (IN)",
+      "2. Phase 2 (5-20 นาที) - Second-line Non-sedating IV AEDs (ให้ทันทีหากไม่หยุดชัก):\n - **Levetiracetam (Keppra):** 60 mg/kg IV (สูงสุด 4,500 mg) Drip ใน 10-15 นาที\n - **Sodium Valproate (Depakine):** 40 mg/kg IV (สูงสุด 3,000 mg) Drip ใน 10-15 นาที\n - **Phenytoin (Dilantin):** 20 mg/kg IV ผสมใน NSS เท่านั้น Drip ในอัตราเร็วไม่เกิน 50 mg/min (ต้องติด Monitor HR/BP)",
+      "3. Phase 3 (20-40 นาทีขึ้นไป) - Refractory Status Epilepticus:\n - ใส่ท่อช่วยหายใจ (Endotracheal Intubation) ทันที\n - ให้ Continuous IV Anesthetics: Propofol (Loading 1-2 mg/kg ตามด้วย 2-10 mg/kg/hr) หรือ Midazolam infusion (Loading 0.2 mg/kg ตามด้วย 0.05-2 mg/kg/hr)"
+    ],
+    "cautions": [
+      "ห้ามผสม Phenytoin ในสารน้ำที่มี Dextrose (Glucose) เด็ดขาด เพราะจะตกตะกอนทันที และห้ามฉีดเร็วกว่า 50 mg/min เพราะจะทำให้เกิด Severe Hypotension และ Arrhythmias",
+      "ระวังภาวะ Non-convulsive Status Epilepticus ในผู้ป่วยที่หยุดกระตุกแล้วแต่ยังซึมลึก ไม่ฟื้นตื่นตามเวลาที่ควร"
+    ]
+  },
+  {
+    "id": "diabetic_ketoacidosis",
+    "category": "Neurology & Metabolic Emergency",
+    "title": "Diabetic Ketoacidosis (DKA) & Hyperglycemic Crisis",
+    "keywords": ["dka", "diabetic ketoacidosis", "เบาหวานเลือดเป็นกรด", "kussmaul breathing", "regular insulin", "ketones", "dextrose drip"],
+    "initial_actions": [
+      "เกณฑ์วินิจฉัย DKA: Blood Glucose > 200-250 mg/dL, Venous/Arterial pH < 7.30 หรือ Serum HCO3 < 18 mEq/L, Anion Gap > 10-12, และตรวจพบ Urine/Serum Ketones positive",
+      "ตรวจร่างกาย: หายใจหอบลึกกลิ่นผลไม้ (Kussmaul breathing), ภาวะขาดน้ำรุนแรง (Severe dehydration), ปวดท้อง คลื่นไส้อาเจียน",
+      "ส่งตรวจ Stat: DTX, Blood Gas, Electrolytes, BUN, Cr, Urine ketones, EKG 12 Leads"
+    ],
+    "interventions": [
+      "1. Fluid Resuscitation (ขั้นตอนสำคัญที่สุด):\n - ชั่วโมงที่ 1: ให้ 0.9% NSS 1,000 - 1,500 mL IV Rapid drip\n - ชั่วโมงถัดไป: ปรับให้ 0.9% NSS หรือ 0.45% NaCl (ขึ้นกับระดับ Corrected Na) ในอัตรา 250-500 mL/hr",
+      "2. ตรวจระดับ Potassium (K+) ก่อนเริ่ม Insulin ทุกครั้ง:\n - **หาก K < 3.3 mEq/L: ห้ามเริ่ม Insulin เด็ดขาด** ให้เติม KCl 20-40 mEq/hr จน K >= 3.3 ก่อน\n - **หาก K 3.3 - 5.2 mEq/L:** ให้ KCl 20-30 mEq ผสมในสารน้ำทุก 1 ลิตร พร้อมกับเริ่ม Insulin\n - **หาก K > 5.2 mEq/L:** ไม่ต้องเติม K แต่ให้ติดตามระดับ K ทุก 2 ชั่วโมง",
+      "3. Regular Insulin (RI) Administration:\n - Continuous IV infusion: Regular Insulin 0.1 unit/kg/hr (หรือ Bolus 0.1 unit/kg แล้วตามด้วย 0.1 unit/kg/hr)\n - เป้าหมาย: ลดระดับน้ำตาลลง 50-75 mg/dL ต่อชั่วโมง",
+      "4. การเปลี่ยนสารน้ำเมื่อน้ำตาลลดลง:\n - **เมื่อ Blood Glucose ลดลงถึง 200-250 mg/dL:** ให้เปลี่ยนสารน้ำเป็น **5% D/N/2 หรือ 5% D/NSS** ทันที และปรับลด Insulin เหลือ 0.02-0.05 unit/kg/hr เพื่อรักษาระดับน้ำตาลไว้ที่ 150-200 mg/dL จนกว่าจะ Resolve DKA (pH > 7.30, HCO3 >= 18, Anion Gap ปกติ)",
+      "5. Sodium Bicarbonate: พิจารณาให้เฉพาะกรณี **Severe Acidosis ที่ pH < 6.90** เท่านั้น (NaHCO3 100 mmol ใน Sterile water 400 mL + KCl 20 mEq Drip ใน 2 ชม.)"
+    ],
+    "cautions": [
+      "ห้ามหยุดหยด Insulin IV ทันทีที่ระดับน้ำตาลแตะ 200 mg/dL เพราะ Acidosis และ Ketosis ยังไม่หาย ให้เติมน้ำตาล Dextrose เข้าไปในสารน้ำเพื่อรัน Insulin ต่อเนื่อง",
+      "ระวังภาวะแทรกซ้อน Cerebral Edema (สมองบวม) จากการลดระดับน้ำตาลหรือ Osmolality ลงเร็วเกินไป โดยเฉพาะในเด็กและวัยรุ่น"
+    ]
+  },
+  {
+    "id": "hyperosmolar_hyperglycemic_state",
+    "category": "Neurology & Metabolic Emergency",
+    "title": "Hyperosmolar Hyperglycemic State (HHS)",
+    "keywords": ["hhs", "honk", "hyperosmolar", "เบาหวานน้ำตาลสูงมาก", "น้ำตาลทะลุจอ", "dehydration in elderly", "effective osmolality"],
+    "initial_actions": [
+      "เกณฑ์วินิจฉัย: Blood Glucose > 600 mg/dL, Effective Serum Osmolality > 320 mOsm/kg, Arterial pH > 7.30, Serum HCO3 > 18 mEq/L, และระดับความรู้สึกตัวซึมลงอย่างมาก/โคม่า",
+      "คำนวณ Effective Osmolality = 2 x Na + (Glucose / 18)",
+      "ประเมินภาวะขาดน้ำรุนแรง (Deficit มักสูงถึง 8-12 ลิตร) และสัญญาณ Prerenal Failure"
+    ],
+    "interventions": [
+      "1. Vigorous Fluid Resuscitation (หัวใจหลักของ HHS):\n - ให้ 0.9% NSS 1,000 - 1,500 mL IV bolus ในชั่วโมงแรก\n - จากนั้นประเมิน Corrected Sodium: หาก Na ปกติ/สูง ให้ใช้ 0.45% NaCl อัตรา 250-500 mL/hr หาก Na ต่ำ ให้ใช้ 0.9% NSS",
+      "2. Regular Insulin Therapy:\n - Regular Insulin 0.1 unit/kg IV bolus ตามด้วย 0.1 unit/kg/hr IV infusion (หรือเริ่ม Drip โดยไม่ Bolus)\n - **เมื่อ Blood Glucose ลดลงถึง 300 mg/dL:** ให้เปลี่ยนสารน้ำเป็น 5% Dextrose ผสมใน 0.45% NaCl และลดอัตรา Insulin เหลือ 0.02-0.05 unit/kg/hr เพื่อรักษาระดับน้ำตาลไว้ที่ 200-300 mg/dL จนกว่าผู้ป่วยจะตื่นรู้ตัวดีและ Osmolality ลดลงสู่ระดับปกติ",
+      "3. Potassium Replacement: รักษาระดับ K ให้อยู่ที่ 4.0 - 5.0 mEq/L โดยเติม KCl ในสารน้ำเช่นเดียวกับแนวทาง DKA"
+    ],
+    "cautions": [
+      "เป้าหมายการรักษาหลักใน HHS คือการเติมน้ำ (Rehydration) อย่างเพียงพอ ไม่ใช่การเร่งฉีด Insulin ขนาดสูง",
+      "ผู้ป่วย HHS มีความเสี่ยงต่อภาวะ Thromboembolism (ลิ่มเลือดอุดตัน) สูงมากเนื่องจากเลือดมีความเข้มข้นสูงและนอนติดเตียง ควรพิจารณา Prophylactic Anticoagulation (LMWH) เมื่อไม่มีข้อห้าม"
+    ]
+  },
+  {
+    "id": "severe_hypoglycemia",
+    "category": "Neurology & Metabolic Emergency",
+    "title": "Severe Hypoglycemia (ภาวะน้ำตาลในเลือดต่ำวิกฤต)",
+    "keywords": ["hypoglycemia", "น้ำตาลในเลือดต่ำ", "dtx ต่ำ", "หมดสติ เหงื่อแตก ตัวเย็น", "d50w", "glucagon", "sulfonylurea"],
+    "initial_actions": [
+      "ตรวจวัด DTX ทันทีในผู้ป่วยหมดสติ ซึม สับสน ชัก หรือมีอาการทางระบบประสาททุกราย (DTX < 70 mg/dL หรือ < 54 mg/dL ในผู้ป่วยวิกฤต)",
+      "ประเมินประวัติการใช้ยาลดน้ำตาล (Insulin, Sulfonylurea: Glipizide, Glibenclamide) และประวัติดื่มแอลกอฮอล์หรือภาวะอดอาหาร"
+    ],
+    "interventions": [
+      "1. ผู้ป่วยหมดสติ / กลืนไม่ได้ (Unconscious Patient):\n - ให้ **50% Glucose (D50W) 50 mL (1 amp) IV Push ช้าๆ ใน 3-5 นาที** (เด็ก: 10% D10W 2-5 mL/kg IV)\n - ติดตาม DTX ซ้ำที่ 15 นาที หากยัง < 70 mg/dL ให้ซ้ำ D50W ได้อีก 1 amp\n - เมื่อผู้ป่วยฟื้น ให้ต่อด้วย 10% Dextrose/NSS หรือ 10% D/W IV Drip ต่อเนื่อง",
+      "2. ผู้ป่วยรู้สึกตัวดี / กลืนได้ปลอดภัย (Conscious Patient - Rule of 15):\n - ให้รับประทาน Fast-acting Carbohydrate 15-20 กรัม (เช่น น้ำส้ม 1 กล่อง, น้ำหวานเฮลบลูบอยด์ 1-2 ช้อนโต๊ะ, หรือลูกอม 3-4 เม็ด)\n - ตรวจ DTX ซ้ำใน 15 นาที หากยังต่ำให้กินซ้ำ",
+      "3. ภาวะน้ำตาลต่ำจากยากลุ่ม Sulfonylurea (Prolonged Hypoglycemia):\n - ให้ **Octreotide 50-100 mcg SC หรือ IV ทุก 8-12 ชั่วโมง** เพื่อยับยั้งการหลั่ง Insulin จากตับอ่อน และต้อง Admit สังเกตอาการอย่างน้อย 24-48 ชั่วโมง"
+    ],
+    "cautions": [
+      "ในผู้ป่วยที่มีประวัติติดสุราเรื้อรัง (Alcoholism) หรือทุพโภชนาการ ต้องฉีด **Thiamine 100 mg IV/IM ก่อนหรือพร้อมกับการให้ Glucose** เสมอ เพื่อป้องกันภาวะ Acute Wernicke's Encephalopathy",
+      "ห้ามจำหน่ายผู้ป่วยที่เกิดภาวะ Hypoglycemia จากยากลุ่ม Sulfonylurea (เช่น Glipizide, Glibenclamide) กลับบ้านเร็วเกินไป เพราะยาออกฤทธิ์ยาวและจะเกิดน้ำตาลต่ำซ้ำได้อีกหลายครั้ง"
+    ]
+  },
+  {
+    "id": "acute_intracerebral_hemorrhage",
+    "category": "Neurology & Metabolic Emergency",
+    "title": "Spontaneous Intracerebral Hemorrhage (ICH) & Subarachnoid Hemorrhage (SAH)",
+    "keywords": ["ich", "sah", "intracerebral hemorrhage", "subarachnoid", "เลือดออกในสมอง", "ปวดหัวรุนแรงที่สุดในชีวิต", "thunderclap headache", "nimodipine"],
+    "initial_actions": [
+      "ประเมินอาการสงสัย SAH: ปวดศีรษะรุนแรงเฉียบพลันทันทีทันใด (Thunderclap headache / Worst headache of life), คอแข็ง (Stiff neck), หมดสติชั่วคราว",
+      "ส่ง Urgent Non-contrast Brain CT scan ทันที (หากสงสัย SAH แต่ CT ปกติ ต้องพิจารณาทำ Lumbar Puncture ตรวจ Xanthochromia)",
+      "ซักประวัติการใช้ยาต้านการแข็งตัวของเลือด (Warfarin, DOACs) หรือยาต้านเกล็ดเลือดทันที"
+    ],
+    "interventions": [
+      "1. Blood Pressure Management (ICH Protocol):\n - ในผู้ป่วยที่มี SBP 150-220 mmHg: ให้ลดความดันโลหิตลงอย่างรวดเร็วและปลอดภัยโดยใช้ **Nicardipine IV infusion** (เป้าหมาย **Target SBP 130-140 mmHg** ภายใน 1-2 ชั่วโมงแรก)\n - หลีกเลี่ยงไม่ให้ SBP ตกต่ำกว่า 130 mmHg",
+      "2. Anticoagulant Reversal (แก้ไขภาวะเลือดออกผิดปกติทันที):\n - หากใช้ **Warfarin:** ให้ **4-Factor Prothrombin Complex Concentrate (4F-PCC) 25-50 units/kg IV** ร่วมกับ **Vitamin K1 10 mg IV ช้าๆ** (หากไม่มี PCC ให้ใช้ FFP 15 mL/kg)\n - หากใช้ **Dabigatran:** ให้ Specific Antidote คือ **Idarucizumab (Praxbind) 5 g IV**\n - หากใช้ **Rivaroxaban / Apixaban:** ให้ **Andexanet alfa** หรือ 4F-PCC 50 units/kg IV",
+      "3. Aneurysmal SAH Management:\n - ให้ **Nimodipine 60 mg PO ทุก 4 ชั่วโมง** (เริ่มให้เร็วที่สุดเพื่อป้องกัน Cerebral Vasospasm และ Delayed Cerebral Ischemia)\n - ปรึกษาศัลยแพทย์ระบบประสาทเพื่อเตรียมทำ Aneurysm Clipping หรือ Endovascular Coiling"
+    ],
+    "cautions": [
+      "ห้ามลดความดันโลหิตลงต่ำกว่า 120-130 mmHg ในผู้ป่วย ICH เพราะจะทำให้เนื้อสมองรอบก้อนเลือด (Perihematomal penumbra) ขาดเลือด",
+      "ห้ามให้ยา Nimodipine ผ่านทางหลอดเลือดดำ (IV) ชนิดฉีดเร็วโดยเด็ดขาด เนื่องจากทำให้ความดันตกวิกฤตและเสียชีวิตได้ (ให้ชนิดรับประทานหรือผ่านสาย NG tube เท่านั้น)"
+    ]
+  },
+  {
+    "id": "acute_upper_gi_bleeding",
+    "category": "Gastrointestinal & Surgical Emergency",
+    "title": "Acute Upper Gastrointestinal Bleeding (UGIB)",
+    "keywords": ["ugib", "upper gi bleeding", "อาเจียนเป็นเลือด", "ถ่ายดำ", "melena", "hematemesis", "variceal bleeding", "pantoprazole", "octreotide", "sengstaken"],
+    "initial_actions": [
+      "ประเมินสัญญาณชีพและภาวะ Hemodynamic Instability (Shock, SBP < 90, HR > 100, Orthostatic hypotension)",
+      "เปิด IV line ขนาดใหญ่ (เบอร์ 16-18G) 2 เส้น ทันที และเริ่มให้สารน้ำ Crystalloid (0.9% NSS หรือ Acetar) เพื่อกู้สัญญาณชีพ",
+      "ส่งตรวจ Stat: CBC, Coagulation (PT/INR, PTT), BUN, Cr, Electrolytes, LFT, Type & Crossmatch เลือด (PRBC)",
+      "ตั้งเป้าหมายการให้เลือดแบบจำกัด (Restrictive Transfusion Strategy): **Target Hb 7 - 8 g/dL** (หรือ Target Hb 9 g/dL ในผู้ป่วยที่มี Acute Coronary Syndrome / CAD ร่วมด้วย)",
+      "พิจารณาใส่ Nasogastric (NG) tube เพื่อดูดประเมิน Ongoing active bleeding และล้างกระเพาะ (Lavage) ก่อนส่องกล้อง"
+    ],
+    "interventions": [
+      "1. Non-Variceal UGIB (เช่น Peptic Ulcer Bleeding):\n - **Pantoprazole (PPI):** 80 mg IV bolus ตามด้วย Continuous IV infusion 8 mg/hr (หรือ 40 mg IV q 12h)\n - วางแผนทำ Urgent Esophagogastroduodenoscopy (EGD) ภายใน 24 ชั่วโมง",
+      "2. Variceal Bleeding (สงสัยหรือมีประวัติตับแข็ง / Cirrhosis / Portal Hypertension):\n - **Vasoactive Drug (ให้ทันทีไม่ต้องรอผลส่องกล้อง):**\n   * **Octreotide:** 50 mcg IV bolus ตามด้วย 50 mcg/hr Continuous IV infusion ต่อเนื่อง 3-5 วัน\n   * หรือ **Terlipressin:** 2 mg IV ทุก 4 ชั่วโมงในวันแรก จากนั้นลดเหลือ 1 mg IV ทุก 4 ชั่วโมง\n - **Prophylactic Antibiotics (จำเป็นมากในผู้ป่วยตับแข็ง):** **Ceftriaxone 1 g IV daily** (หรือ Ciprofloxacin 400 mg IV q 12h) ต่อเนื่อง 5-7 วัน เพื่อลดการติดเชื้อ SBP และลดอัตราการเสียชีวิต\n - **Endoscopic Variceal Ligation (EVL):** ส่องกล้องรัดเส้นเลือดขอดภายใน 12 ชั่วโมง",
+      "3. Balloon Tamponade (กรณี Massive Variceal Bleeding ควบคุมไม่ได้):\n - พิจารณาใส่ **Sengstaken-Blakemore tube** หรือ Minnesota tube เพื่อกดห้ามเลือดชั่วคราว (Gastric balloon เติมลม 200-250 mL ดึงถ่วงน้ำหนัก 0.5-1 kg)"
+    ],
+    "cautions": [
+      "หลีกเลี่ยงการให้เลือดหรือสารน้ำมากเกินไป (Over-transfusion / Target Hb > 9-10 g/dL) ในผู้ป่วย Variceal bleeding เพราะจะทำให้ความดันในระบบหลอดเลือดพอร์ทัล (Portal pressure) พุ่งสูงขึ้นและกระตุ้นให้เลือดออกซ้ำรุนแรง",
+      "ห้ามคาการกดลูกโป่ง Esophageal balloon ของ Sengstaken tube ไว้นานเกิน 24-36 ชั่วโมง เพราะเสี่ยงต่อการเกิด Esophageal necrosis และการแตกทะลุของหลอดอาหาร"
+    ]
+  },
+  {
+    "id": "acute_pancreatitis",
+    "category": "Gastrointestinal & Surgical Emergency",
+    "title": "Acute Pancreatitis (ตับอ่อนอักเสบเฉียบพลัน)",
+    "keywords": ["acute pancreatitis", "pancreatitis", "ตับอ่อนอักเสบ", "ปวดท้องทะลุหลัง", "lipase", "amylase", "cullen sign", "grey turner", "ringer lactate"],
+    "initial_actions": [
+      "เกณฑ์การวินิจฉัย (Revised Atlanta Criteria - ต้องมีอย่างน้อย 2 ใน 3 ข้อ):\n 1. ปวดท้องรุนแรงเฉียบพลันบริเวณลิ้นปี่/ใต้ชายโครงซ้าย ร้าวทะลุไปข้างหลัง (Epigastric pain radiating to back)\n 2. ระดับ **Serum Lipase หรือ Amylase สูงเกิน 3 เท่าของค่าปกติ (ULN)**\n 3. ภาพถ่ายรังสี (CT Abdomen หรือ Ultrasound) พบพยาธิสภาพของตับอ่อนอักเสบ",
+      "ประเมินหาสาเหตุหลัก: นิ่วในถุงน้ำดี/ท่อน้ำดี (Gallstone pancreatitis), ดื่มแอลกอฮอล์, หรือ Hypertriglyceridemia (Triglyceride > 1,000 mg/dL)",
+      "ตรวจหาภาวะเลือดออกในช่องท้อง: Cullen's sign (รอยเขียวคล้ำรอบสะดือ) หรือ Grey Turner's sign (รอยเขียวคล้ำบริเวณสีข้าง)"
+    ],
+    "interventions": [
+      "1. Goal-Directed Fluid Resuscitation (การให้สารน้ำอย่างเพียงพอในระยะแรก):\n - ชนิดสารน้ำ: **Ringer's Lactate (RLS) หรือ Acetar** เป็นทางเลือกแรก (ลดการอักเสบได้ดีกว่า 0.9% NSS)\n - อัตราการให้: 200 - 500 mL/hr หรือ 5-10 mL/kg/hr ในช่วง 12-24 ชั่วโมงแรก (ปรับลดลงในผู้ป่วยโรคหัวใจ/โรคไต)\n - เป้าหมาย: รักษา Urine Output > 0.5 - 1.0 mL/kg/hr, ลด Hct ให้อยู่ที่ 35-44%, และรักษาระดับ BUN/Cr ให้คงที่",
+      "2. Pain Control (การระงับปวดอย่างมีประสิทธิภาพ):\n - ให้ **Fentanyl 25-50 mcg IV** หรือ **Morphine 2-4 mg IV** หรือ Pethidine 25-50 mg IV เพื่อควบคุมความปวดรุนแรง",
+      "3. Nutrition & Oral Intake:\n - หากอาการปวดท้องลดลง ไม่มีคลื่นไส้อาเจียน และ Bowel sounds ทำงาน สามารถเริ่มจิบน้ำและรับประทานอาหารไขมันต่ำ (Low-fat diet) ได้ทันที ไม่จำเป็นต้อง NPO นานเกินไป",
+      "4. Prophylactic Antibiotics:\n - **ไม่แนะนำให้ยาปฏิชีวนะป้องกันล่วงหน้า (No Routine Prophylactic Abx)** ในตับอ่อนอักเสบทุกราย ให้เฉพาะกรณีสงสัย Infected Necrosis หรือ Cholangitis ร่วมด้วย (Meropenem 1 g IV q 8h หรือ Ceftriaxone + Metronidazole)"
+    ],
+    "cautions": [
+      "ระวังการเติมสารน้ำเกิน (Fluid Overload) ต้องตรวจฟังเสียงปอดและติดตามค่า Oxygen Saturation สม่ำเสมอ",
+      "ห้ามส่งทำ Contrast CT Abdomen ทันทีใน 48-72 ชั่วโมงแรกหากการวินิจฉัยทางคลินิกชัดเจนอยู่แล้ว เพราะการทำ CT เร็วเกินไปอาจยังไม่เห็นขอบเขตเนื้อตายของตับอ่อน (Pancreatic necrosis) และสารทึบรังสีอาจซ้ำเติมไตวาย"
+    ]
+  },
+  {
+    "id": "acute_appendicitis_peritonitis",
+    "category": "Gastrointestinal & Surgical Emergency",
+    "title": "Acute Appendicitis & Peritonitis (ไส้ติ่งอักเสบและเยื่อบุช่องท้องอักเสบ)",
+    "keywords": ["appendicitis", "peritonitis", "ไส้ติ่งอักเสบ", "ปวดท้องด้านขวาล่าง", "mcburney", "rebound tenderness", "free air", "pneumoperitoneum", "acute abdomen"],
+    "initial_actions": [
+      "ตรวจร่างกายหา Signs of Peritoneal Irritation:\n - **McBurney's point tenderness, Rebound tenderness, Guarding / Rigidity (ท้องแข็งเกร็งเหมือนกระดาน)**\n - Rovsing's sign, Psoas sign, Obturator sign",
+      "ประเมิน Alvarado Score หรือ AIR Score",
+      "ตรวจภาพถ่ายรังสี Upright CXR หรือ Plain Film Abdomen เพื่อตรวจหา **Free Air under Diaphragm (Pneumoperitoneum)** เพื่อแยกภาวะ Hollow Viscus Perforation (กระเพาะ/ลำไส้ทะลุ)",
+      "งดน้ำและอาหาร (NPO) ทันที, เปิด IV line ให้สารน้ำ Crystalloid, ส่งตรวจ CBC (Leukocytosis with Left shift), Urinalysis (Rule out UTI/Stone), UPT ในสตรีวัยเจริญพันธุ์"
+    ],
+    "interventions": [
+      "1. Empirical Intravenous Antibiotics (เริ่มทันทีที่วินิจฉัย):\n - **Ceftriaxone 1-2 g IV daily + Metronidazole 500 mg IV q 8h**\n - หรือ **Ampicillin/Sulbactam (Unasyn) 1.5-3 g IV q 6h**\n - หรือ **Ciprofloxacin 400 mg IV q 12h + Metronidazole 500 mg IV q 8h**",
+      "2. Adequate Analgesia:\n - สามารถให้ยาแก้ปวดกลุ่ม Opioids (เช่น Fentanyl หรือ Morphine IV ขนาดต่ำ) ได้อย่างปลอดภัยเพื่อบรรเทาความทรมาน โดยไม่บดบังการตรวจประเมินทางศัลยกรรม",
+      "3. Surgical Consultation: ปรึกษาศัลยแพทย์เพื่อทำ Urgent Appendectomy หรือ Emergency Exploratory Laparotomy ทันที"
+    ],
+    "cautions": [
+      "ห้ามให้ยาระบาย (Laxatives) หรือสวนอุจจาระ (Enema) ในผู้ป่วยที่สงสัยไส้ติ่งอักเสบเด็ดขาด เพราะอาจกระตุ้นให้ไส้ติ่งแตกทะลุ (Rupture)",
+      "ในผู้ป่วยสูงอายุและหญิงตั้งครรภ์ อาการและอาการแสดงของไส้ติ่งอักเสบอาจไม่ชัดเจน (Atypical presentation) เช่น ไม่มีไข้ หรือปวดตำแหน่งสูงกว่าปกติ ต้องระมัดระวังเป็นพิเศษ"
+    ]
+  },
+  {
+    "id": "acute_bowel_obstruction",
+    "category": "Gastrointestinal & Surgical Emergency",
+    "title": "Acute Bowel Obstruction (ภาวะลำไส้อุดตันเฉียบพลัน)",
+    "keywords": ["bowel obstruction", "sbo", "lbo", "ลำไส้อุดตัน", "ท้องอืด ไม่ผายลม", "air fluid level", "step ladder", "strangulated hernia", "ไส้เลื่อนติดกัก"],
+    "initial_actions": [
+      "ประเมิน 4 อาการสำคัญของภาวะลำไส้อุดตัน: ปวดท้องบิดเกร็งเป็นพักๆ (Colicky pain), ท้องอืดแน่น (Abdominal distension), คลื่นไส้อาเจียน (อาจอาเจียนเป็นเศษอาหารหรือกลิ่นอุจจาระ - Feculent vomiting), และ **ไม่ถ่ายไม่ผายลม (Obstipation)**",
+      "ตรวจร่างกายบริเวณหน้าท้องและขาหนีบ (Groin) ทุกรายเพื่อตรวจหา **Strangulated / Incarcerated Inguinal Hernia (ไส้เลื่อนติดกัก/ขาดเลือด)**",
+      "ตรวจภาพถ่ายรังสี Plain Abdomen (Upright & Supine):\n - **Small Bowel Obstruction (SBO):** พบลักษณะ Central dilated loops (> 3 cm), Valvulae conniventes พาดขวางตลอดแนว, Multiple Air-fluid levels เรียงตัวแบบ Step-ladder pattern, ไม่มีลมในลำไส้ใหญ่\n - **Large Bowel Obstruction (LBO):** พบลักษณะ Peripheral dilated loops (> 6 cm หรือ Caecum > 9 cm) ร่วมกับ Haustral markings"
+    ],
+    "interventions": [
+      "1. Nasogastric (NG) Tube Decompression:\n - ใส่สาย NG tube ต่อลงถุงระบายหรือต่อ Low intermittent suction เพื่อลดความดันในทางเดินอาหาร ป้องกันการสำลัก และบรรเทาอาการแน่นท้อง",
+      "2. Fluid & Electrolyte Resuscitation:\n - ผู้ป่วยมักสูญเสียสารน้ำและเกลือแร่เข้าสู่ช่องลำไส้ (Third-space fluid loss) และจากการอาเจียน\n - ให้ **0.9% NSS หรือ Ringer's Lactate** ชดเชยสารน้ำอย่างเพียงพอ และตรวจติดตาม/แก้ไขระดับ Hypokalemia / Hypochloremic Metabolic Alkalosis",
+      "3. NPO 100% และส่งตรวจ CT Whole Abdomen เพื่อระบุตำแหน่งและสาเหตุของการอุดตัน (Adhesion, Tumor, Volvulus, Intussusception)",
+      "4. สัญญาณอันตรายที่ต้องผ่าตัดฉุกเฉิน (Signs of Strangulation / Bowel Ischemia):\n - ปวดท้องรุนแรงต่อเนื่องไม่เป็นพักๆ, มีไข้, ชีพจรเร็ว, Leukocytosis สูงมาก, มี Rebound tenderness หรือ Localized peritonitis, Lactic acidosis -> ให้ Broad-spectrum IV Antibiotics และส่งผ่าตัดทันที"
+    ],
+    "cautions": [
+      "ห้ามพยายามใช้มือกดดันไส้เลื่อนกลับ (Manual reduction) ในกรณี Incarcerated Hernia ที่มีอาการปวดบวมแดงร้อนรุนแรง มีไข้ หรือติดกักมานานเกิน 6-8 ชั่วโมง เพราะอาจดันลำไส้ที่เน่าตายแตกทะลุกลับเข้าช่องท้อง",
+      "ห้ามใช้ยากระตุ้นการเคลื่อนไหวของทางเดินอาหาร (Prokinetic agents เช่น Metoclopramide) ในผู้ป่วย Complete Mechanical Bowel Obstruction"
+    ]
+  },
+  {
+    "id": "acute_cholangitis",
+    "category": "Gastrointestinal & Surgical Emergency",
+    "title": "Acute Cholangitis & Biliary Sepsis (ท่อน้ำดีอักเสบติดเชื้อเฉียบพลัน)",
+    "keywords": ["cholangitis", "acute cholangitis", "ติดเชื้อท่อน้ำดี", "charcot triad", "reynolds pentad", "ตัวเหลืองตาเหลือง ไข้หนาวสั่น", "ercp"],
+    "initial_actions": [
+      "ตรวจประเมิน **Charcot's Triad** (พบใน 50-70% ของผู้ป่วย):\n 1. Fever with chills (มีไข้สูง หนาวสั่น)\n 2. Right Upper Quadrant Pain (ปวดใต้ชายโครงขวา)\n 3. Jaundice (ตัวเหลือง ตาเหลือง)",
+      "ตรวจประเมิน **Reynolds' Pentad** (สัญญาณวิกฤต Severe Suppurative Cholangitis / Septic Shock):\n - Charcot's Triad + **Hypotension (ความดันตก/ช็อก)** + **Altered Mental Status (ซึม สับสน)**",
+      "ส่งตรวจ Stat: CBC, LFT (Total/Direct Bilirubin สูง, ALP/GGT สูง, AST/ALT สูง), Hemoculture 2 ขวด, Coagulation, BUN/Cr, Electrolytes",
+      "ทำ Bedside Ultrasound หรือ Urgent CT Abdomen เพื่อตรวจหา Common Bile Duct (CBD) Dilatation (> 6-8 mm) และนิ่วในท่อน้ำดี (Choledocholithiasis)"
+    ],
+    "interventions": [
+      "1. Resuscitation: เปิด IV line ให้สารน้ำ Crystalloid bolus แก้ไขภาวะช็อกตาม Sepsis Bundle และให้ออกซิเจน",
+      "2. Broad-Spectrum Intravenous Antibiotics ทันที (ภายใน 1 ชั่วโมงแรก):\n - **Ceftriaxone 2 g IV daily + Metronidazole 500 mg IV q 8h**\n - หรือ **Piperacillin/Tazobactam 4.5 g IV q 6h** (กรณี Severe/Septic Shock)\n - หรือ **Meropenem 1 g IV q 8h**",
+      "3. Emergency Biliary Decompression (หัวใจหลักในการช่วยชีวิต):\n - **Endoscopic Retrograde Cholangiopancreatography (ERCP) with Biliary Drainage (Endoscopic Sphincterotomy / Stenting)** หรือทำ Percutaneous Transhepatic Biliary Drainage (PTBD)\n - ในรายที่มี Severe Cholangitis / Reynolds' Pentad: ต้องทำ Biliary Decompression ฉุกเฉินทันทีหลัง Resuscitation ให้เร็วที่สุด"
+    ],
+    "cautions": [
+      "Acute Cholangitis เป็นภาวะฉุกเฉินทางศัลยกรรมที่มีอัตราการเสียชีวิตสูงมาก หากให้ยาปฏิชีวนะอย่างเดียวโดยไม่ระบายการอุดตันของท่อน้ำดี (Biliary decompression) ผู้ป่วยมักไม่ตอบสนองและเสียชีวิตจาก Septic shock",
+      "ระวังภาวะ Coagulopathy จากการขาด Vitamin K ในผู้ป่วยที่มี Chronic Biliary Obstruction พิจารณาให้ Vitamin K1 10 mg IV ช้าๆ"
+    ]
+  },
+  {
+    "id": "pals_pediatric_resuscitation",
+    "category": "Pediatric Emergency",
+    "title": "Pediatric Cardiac Arrest & Resuscitation (PALS Protocol)",
+    "keywords": ["pals", "pediatric cpr", "เด็กหัวใจหยุดเต้น", "cpr เด็ก", "pediatric arrest", "resuscitation in children", "defibrillation doseเด็ก"],
+    "initial_actions": [
+      "เริ่ม High-Quality Pediatric CPR ทันที (กดลึกอย่างน้อย 1/3 ของความหนาหน้าอก หรือประมาณ 4-5 ซม., อัตราเร็ว 100-120 ครั้ง/นาที, อัตราส่วน Compression:Ventilation คือ 30:2 หากมีผู้ช่วยเหลือ 1 คน หรือ 15:2 หากมีผู้ช่วยเหลือ 2 คน)",
+      "สาเหตุส่วนใหญ่ในเด็กเกิดจากภาวะ Hypoxia และ Respiratory Failure (Asphyxial arrest) จึงต้องให้ความสำคัญกับการช่วยหายใจและ Oxygenation 100% เป็นอันดับแรก",
+      "ติด Monitor/Defibrillator และประเมิน Rhythm ทันที"
+    ],
+    "interventions": [
+      "1. Shockable Rhythm (VF / Pulseless VT):\n - **Defibrillation ครั้งที่ 1:** **2 J/kg** -> ทำ CPR ต่อ 2 นาทีทันที -> ประเมิน Rhythm\n - **Defibrillation ครั้งที่ 2:** **4 J/kg** -> ให้ **Adrenaline (1:10,000) 0.01 mg/kg (0.1 mL/kg) IV/IO** ทุก 3-5 นาที\n - **Defibrillation ครั้งที่ 3 และครั้งถัดไป:** **>= 4 J/kg** (ปรับเพิ่มได้ถึง 10 J/kg หรือไม่เกินขนาดผู้ใหญ่ 200 J) ร่วมกับให้ **Amiodarone 5 mg/kg IV/IO bolus** (ซ้ำได้รวมไม่เกิน 3 ครั้ง) หรือ Lidocaine 1 mg/kg",
+      "2. Non-Shockable Rhythm (Asystole / PEA):\n - ทำ CPR ต่อเนื่อง 15:2 และให้ **Adrenaline (1:10,000) 0.01 mg/kg (0.1 mL/kg) IV/IO ทันทีที่เปิดเส้นได้** และซ้ำทุก 3-5 นาที",
+      "3. Fluid Bolus in Shock/Hypovolemia: ให้ 0.9% NSS หรือ Acetar **10 - 20 mL/kg IV/IO Rapid push** ใน 5-20 นาที"
+    ],
+    "cautions": [
+      "ความเข้มข้นของ Adrenaline ในเด็กสำหรับการฉีดทางหลอดเลือด (IV/IO): **ต้องใช้ความเข้มข้น 1:10,000 (0.1 mg/mL)** ขนาดยา 0.1 mL/kg ห้ามใช้หลอด 1:1,000 ฉีดตรงเด็ดขาด",
+      "หากไม่สามารถเปิดเส้น Peripheral IV ได้ภายใน 60-90 วินาทีในภาวะวิกฤต ให้แทงเข็มเข้าไขกระดูก (Intraosseous - IO) ที่ Proximal Tibia ทันที"
+    ]
+  },
+  {
+    "id": "severe_preeclampsia_eclampsia",
+    "category": "OB/GYN Emergency",
+    "title": "Severe Preeclampsia & Eclampsia (ภาวะครรภ์เป็นพิษรุนแรงและชัก)",
+    "keywords": ["eclampsia", "preeclampsia", "ครรภ์เป็นพิษ", "ชักในคนท้อง", "magnesium sulfate", "mgso4 protocol", "hydralazine", "nicardipine pregnancy", "eclampsia seizure"],
+    "initial_actions": [
+      "ประเมิน Severe Features: BP >= 160/110 mmHg, ปวดศีรษะรุนแรง ตาพร่ามัว จุกแน่นลิ้นปี่/ใต้ชายโครงขวา (RUQ pain), เกล็ดเลือด < 100,000 /uL, Serum Cr > 1.1 mg/dL, LFT สูงขึ้น 2 เท่า, น้ำท่วมปอด (Pulmonary edema)",
+      "ป้องกันการสำลักและอุบัติเหตุ: จัดท่านอนตะแคงซ้าย (Left lateral tilt) ให้ออกซิเจน Mask with reservoir, ดูดเสมหะ, เปิด IV line เบอร์ใหญ่",
+      "ติด Monitor สัญญาณชีพ, EFM (Fetal Heart Rate), และใส่ Foley catheter ติดตาม Urine output"
+    ],
+    "interventions": [
+      "1. Seizure Prophylaxis & Treatment (Magnesium Sulfate - MgSO4 Protocol):\n - **Loading Dose:** **50% MgSO4 4 g (8 mL) ผสมใน 5% D5W หรือ NSS 100 mL IV Drip ใน 15-20 นาที** (หรือฉีด 50% MgSO4 10 g IM โดยแบ่งฉีดสะโพกข้างละ 5 g ผสม 2% Xylocaine 1 mL)\n - **Maintenance Dose:** **50% MgSO4 10 g ผสมใน 5% D5W 500 mL IV Drip ในอัตรา 1 - 2 g/hr (50-100 mL/hr)** ต่อเนื่องจนครบ 24 ชั่วโมงหลังคลอดหรือหลังชักครั้งสุดท้าย\n - **กรณีชักซ้ำระหว่างได้ยา:** ให้ 50% MgSO4 เพิ่มอีก 2 g IV push ช้าๆ ใน 5 นาที",
+      "2. Antihypertensive Therapy (เมื่อ BP >= 160/110 mmHg - Target SBP 140-150 / DBP 90-100 mmHg):\n - **Hydralazine:** 5-10 mg IV push ช้าๆ ใน 2 นาที (ซ้ำได้ทุก 20 นาที สูงสุด 30 mg)\n - หรือ **Nicardipine:** IV infusion เริ่ม 5 mg/hr titrate เพิ่มทีละ 2.5 mg/hr ทุก 5-15 นาที (สูงสุด 15 mg/hr)\n - หรือ **Labetalol:** 20 mg IV push ช้าๆ (ซ้ำได้ 40-80 mg ทุก 10 นาที สูงสุด 220-300 mg)",
+      "3. การประเมิน Magnesium Toxicity ก่อนให้ยาแต่ละชั่วโมง:\n - Deep Tendon Reflexes (Knee jerk) ต้องยังมีอยู่ (หายไปเมื่อ Mg > 8-10 mg/dL)\n - Respiratory Rate (RR) ต้อง >= 14 ครั้ง/นาที (กดการหายใจเมื่อ Mg > 12 mg/dL)\n - Urine Output ต้อง >= 25-30 mL/hr หรือ >= 100 mL ใน 4 ชม.\n - **Antidote:** หากเกิด MgSO4 Toxicity ให้ **10% Calcium Gluconate 10 mL (1 g) IV push ช้าๆ ใน 3-5 นาที** ทันที"
+    ],
+    "cautions": [
+      "ห้ามใช้ Diazepam หรือ Phenytoin เป็นยาทางเลือกแรกในการระงับชักใน Eclampsia เพราะ Magnesium Sulfate มีประสิทธิภาพเหนือกว่าและปลอดภัยต่อทารกมากกว่าชัดเจน",
+      "หลีกเลี่ยงการลดความดันโลหิตลงต่ำกว่า 130/80 mmHg เพราะจะทำให้เลือดไปเลี้ยงมดลูกและทารก (Uteroplacental perfusion) ลดลงฉับพลัน"
+    ]
+  },
+  {
+    "id": "postpartum_hemorrhage_pph",
+    "category": "OB/GYN Emergency",
+    "title": "Postpartum Hemorrhage (PPH - เลือดออกหลังคลอดเฉียบพลัน)",
+    "keywords": ["pph", "postpartum hemorrhage", "ตกเลือดหลังคลอด", "มดลูกไม่หดรัดตัว", "uterine atony", "oxytocin", "ergometrine", "misoprostol", "nalador", "bakri balloon"],
+    "initial_actions": [
+      "นิยาม PPH: เลือดออกทางช่องคลอด >= 500 mL หลังคลอดปกติทางช่องคลอด หรือ >= 1,000 mL หลังผ่าตัดคลอด หรือมีสัญญาณช็อกจากการเสียเลือด",
+      "ประเมินหาสาเหตุ 4Ts ทันที:\n 1. **Tone (70%):** มดลูกไม่หดรัดตัว (Uterine atony) คลำพบมดลูกนิ่ม ไม่เป็นก้อนกลมแข็ง\n 2. **Trauma (20%):** แผลฉีกขาดของช่องคลอด ฝีเย็บ หรือปากมดลูก (Perineal/Cervical tear), Uterine rupture/inversion\n 3. **Tissue (10%):** เศษรกหรือเยื่อหุ้มรกค้าง (Retained placenta/cotyledon)\n 4. **Thrombin (1%):** ภาวะเลือดแข็งตัวผิดปกติ (Coagulopathy / DIC)",
+      "Uterine Massage: คลึงนวดมดลูกให้แข็งตัวทันที และทำ Bimanual Uterine Compression",
+      "เปิด IV line ขนาดใหญ่ (14-16G) 2 เส้น, สวนปัสสาวะทิ้งคาสาย Foley, ส่งตรวจ Type and Screen/Crossmatch เลือด และเปิด MTP"
+    ],
+    "interventions": [
+      "1. Uterotonic Medications (ให้ตามลำดับขั้นตอน):\n - **Oxytocin (Syntocinon) - First-line:** 10-20 units ผสมใน RLS/NSS 1,000 mL IV Drip ในอัตรา 250-500 mL/hr (หรือ 10 units IM ทันที)\n - **Methylergonovine (Methergin):** 0.2 mg IM หรือ IV ช้าๆ (ซ้ำได้ทุก 2-4 ชม.) *[ห้ามใช้ในผู้ป่วยที่มี Hypertension หรือ Preeclampsia]*\n - **Misoprostol (Cytotec):** 800 - 1,000 mcg เหน็บทางทวารหนัก (PR) หรือ 600-800 mcg อมใต้ลิ้น (SL)\n - **Sulprostone (Nalador):** 500 mcg ผสมใน NSS 500 mL IV Drip ในอัตรา 100-500 mcg/hr (เมื่อยาอื่นไม่ได้ผล)",
+      "2. Tranexamic Acid (TXA) - WOMAN Trial Protocol:\n - ให้ **TXA 1 g IV ใน 10 นาที** ทันทีที่วินิจฉัย PPH (ต้องให้ภายใน 3 ชั่วโมงหลังคลอด) ซ้ำได้อีก 1 g หากเลือดยังไม่หยุดใน 30 นาที",
+      "3. Intrauterine Balloon Tamponade (UBT) & Surgical Intervention:\n - ใส่ **Bakri Balloon** เติมน้ำเกลือ Sterile NSS 300-500 mL ในโพรงมดลูก หรือใช้ถุงยางอนามัยต่อสาย Foley (Condom Catheter Balloon)\n - ปรึกษาสูตินรีแพทย์เตรียมทำ Uterine artery embolization, B-Lynch suture หรือ Emergency Hysterectomy"
+    ],
+    "cautions": [
+      "ห้ามฉีด Oxytocin แบบ Undiluted Rapid IV Push เด็ดขาด เพราะจะทำให้หลอดเลือดขยายตัวรวดเร็ว ความดันตกวิกฤต หัวใจเต้นผิดจังหวะ และเสียชีวิตได้",
+      "ห้ามใช้ Methergin ในสตรีตั้งครรภ์ที่มีภาวะความดันโลหิตสูง Preeclampsia หรือโรคหลอดเลือดหัวใจ เพราะกระตุ้น Vasospasm รุนแรง"
+    ]
+  },
+  {
+    "id": "chemical_eye_injury",
+    "category": "ENT & Eye Emergency",
+    "title": "Chemical Eye Burns (สารเคมีเข้าตาฉุกเฉิน)",
+    "keywords": ["chemical eye burn", "สารเคมีเข้าตา", "กรดเข้าตา", "ด่างเข้าตา", "ล้างตาฉุกเฉิน", "morgan lens", "eye irrigation", "corneal haziness"],
+    "initial_actions": [
+      "**Emergency Immediate Copious Irrigation (การล้างตาทันทีสำคัญที่สุด):** เริ่มล้างตาทันทีตั้งแต่นาทีแรกที่มาถึงห้องฉุกเฉินโดยไม่ต้องรอซักประวัตินานหรือรอตรวจอย่างอื่น",
+      "ประเมินชนิดสารเคมี:\n - **สารด่าง (Alkali - อันตรายร้ายแรงที่สุด):** โซดาไฟ, น้ำยาล้างห้องน้ำบางชนิด, ปูนซีเมนต์, แอมโมเนีย (เกิด Liquefactive necrosis ซึมลึกทำลายลูกตาอย่างรวดเร็ว)\n - **สารกรด (Acid):** น้ำกรดแบตเตอรี่, กรดไฮโดรคลอริก (เกิด Coagulative necrosis ตกตะกอนโปรตีนกั้นการซึมลึก)",
+      "หยอดยาชาเฉพาะที่: **0.5% Tetracaine หรือ Alcaine 1-2 หยด** ที่ตาข้างที่โดนสารเคมีเพื่อลดการกระตุกเกร็งของเปลือกตาและช่วยให้ล้างตาได้ทั่วถึง"
+    ],
+    "interventions": [
+      "1. Technique of Irrigation:\n - ใช้น้ำเกลือ **0.9% NSS หรือ RLS** อย่างน้อย **1 - 2 ลิตรต่อข้าง** ต่อสาย IV Drip เข้ากับ **Morgan Lens** หรือใช้สายเปิดปล่อยน้ำเกลือชะล้างทั่วทุกซอกมุมของ Fornix\n - พลิกเปิดเปลือกตาทั้งบนและล่าง (Evert eyelids) เพื่อตรวจหาและเช็ดกวาดเศษผงสารเคมี/ปูนซีเมนต์ที่ติดค้างอยู่ออกด้วย Cotton swab",
+      "2. วัดความเป็นกรด-ด่าง (pH Testing):\n - ใช้กระดาษ Litmus หรือแถบตรวจ pH แตะที่บริเวณ Inferior Conjunctival Cul-de-sac หลังหยุดล้างน้ำเกลือไปแล้ว 5 นาที\n - **เป้าหมาย: ล้างต่อเนื่องจนกระทั่งได้ค่า pH เป็นกลาง (Neutral pH 7.0 - 7.4) อย่างคงที่**",
+      "3. การตรวจและประเมินหลังล้างตา:\n - ย้อมสีตาด้วย Fluorescein strip ส่องไฟ Wood's lamp หรือ Slit-lamp เพื่อดู Corneal epithelial defect และ Limbal Ischemia (บริเวณขอบตาดำขาวซีด)",
+      "4. Post-irrigation Medications:\n - ยาปฏิชีวนะหยอดตา (เช่น Levofloxacin หรือ Moxifloxacin eye drops), ยาหยอดขยายม่านตาลดปวด (1% Cyclopentolate), และส่งพบจักษุแพทย์ฉุกเฉินทันที"
+    ],
+    "cautions": [
+      "ห้ามพยายามใช้น้ำยาที่เป็นกรดหรือด่างมาทำปฏิกิริยาสะเทิน (Neutralization) เด็ดขาด เพราะปฏิกิริยาเคมีจะคายความร้อน (Exothermic reaction) ซ้ำเติมให้เนื้อเยื่อตาถูกทำลายรุนแรงขึ้น ให้ใช้น้ำเกลือ NSS/RLS ล้างเท่านั้น",
+      "อย่าลืมวัดค่า pH ซ้ำหลังจากล้างได้ Target ไปแล้ว 20-30 นาที เพราะสารเคมีที่ตกค้างในเนื้อเยื่ออาจค่อยๆ ซึมออกมาทำให้ค่า pH เปลี่ยนแปลงได้อีก"
+    ]
+  },
+  {
+    "id": "foreign_body_airway_obstruction",
+    "category": "ENT & Eye Emergency",
+    "title": "Foreign Body Airway Obstruction (FBAO - สิ่งแปลกปลอมอุดกั้นทางเดินหายใจเฉียบพลัน)",
+    "keywords": ["fbao", "choking", "สำลักอาหาร", "สิ่งแปลกปลอมติดคอ", "heimlich maneuver", "back blows", "chest thrusts", "magill forceps", "stridor choking"],
+    "initial_actions": [
+      "ประเมินระดับความรุนแรงของการอุดกั้น (Severity Assessment):\n - **Mild Obstruction (อุดกั้นเล็กน้อย):** ผู้ป่วยยังสามารถไอแรงๆ ได้ ส่งเสียงได้ และหายใจเองได้ -> **กระตุ้นให้ผู้ป่วยไอขับสิ่งแปลกปลอมออกมาเอง ห้ามเข้าไปกระแทกหรือขัดขวาง**\n - **Severe Obstruction (อุดกั้นสมบูรณ์/รุนแรง):** มือจับที่คอ (Universal choking sign), ไม่สามารถพูดหรือส่งเสียงได้, ไอไม่มีเสียง, หายใจมีเสียงหวีดแหลม (Stridor), หน้าเขียวคล้ำ (Cyanosis) -> **ต้องให้การช่วยเหลือฉุกเฉินทันที**"
+    ],
+    "interventions": [
+      "1. ผู้ป่วยผู้ใหญ่และเด็กโตที่ยังรู้สึกตัว (Conscious Adult/Child):\n - ทำ **Heimlich Maneuver (Abdominal Thrusts):** ยืนด้านหลังผู้ป่วย โอบแขนรอบเอว กำมือข้างหนึ่งวางไว้เหนือกึ่งกลางสะดือแต่อยู่ใต้ลิ้นปี่ ใช้มืออีกข้างกุมไว้ แล้วออกแรงกระแทกเข้าด้านในและดันขึ้นบนอย่างรวดเร็ว (Inward and upward thrusts) ทำต่อเนื่องจนกว่าสิ่งแปลกปลอมจะหลุดออกหรือผู้ป่วยหมดสติ\n - หญิงตั้งครรภ์ไตรมาสท้ายหรือคนอ้วนมาก: ให้ทำ **Chest Thrusts** (กระแทกที่กึ่งกลางกระดูกหน้าอกแทน)",
+      "2. ทารกอายุต่ำกว่า 1 ปี ที่ยังรู้สึกตัว (Conscious Infant < 1 year):\n - จับทารกนอนคว่ำบนท่อนแขน ศีรษะต่ำกว่าลำตัว รองรับคางและใบหน้าไว้\n - ทำ **5 Back Blows (ตบหลัง 5 ครั้ง):** ใช้สันมือตบกึ่งกลางระหว่างสะบัก 5 ครั้ง\n - พลิกตัวทารกหงายบนท่อนแขน ทำ **5 Chest Thrusts (กดหน้าอก 5 ครั้ง):** ใช้นิ้ว 2 นิ้วกดกึ่งกลางกระดูกหน้าอก (ต่ำกว่าราวนมเล็กน้อย) 5 ครั้ง ทำสลับกันไปมา",
+      "3. ผู้ป่วยหมดสติ (Unconscious Choking Patient - ทุกกลุ่มอายุ):\n - ประคองผู้ป่วยลงนอนราบบนพื้นทันที และเริ่มทำ **CPR (Chest Compressions)** ทันที\n - ทุกครั้งที่เปิดทางเดินหายใจเพื่อช่วยหายใจ: **ให้มองดูในช่องปาก หากมองเห็นสิ่งแปลกปลอมชัดเจนให้ใช้นิ้วหยิบออก (Visible foreign body removal)** แต่ **ห้ามใช้นิ้วกวาดแบบสุ่มสี่สุ่มห้า (Blind finger sweep) เด็ดขาด**\n - หากใส่ท่อช่วยหายใจ: ใช้ Laryngoscope ส่องดู Direct visualization และใช้ **Magill Forceps** คีบสิ่งแปลกปลอมออก"
+    ],
+    "cautions": [
+      "ห้ามทำ Blind Finger Sweep ในช่องปากเด็กหรือผู้ใหญ่เด็ดขาด เพราะจะดันสิ่งแปลกปลอมให้เลื่อนลึกเข้าไปอุดกั้นหลอดลมส่วนล่างจนมิด",
+      "ห้ามทำ Abdominal Thrusts (Heimlich Maneuver) ในทารกอายุต่ำกว่า 1 ปี เพราะอาจทำให้ตับหรือม้ามฉีกขาดและมีเลือดออกในช่องท้อง ให้ใช้เทคนิค Back Blows สลับ Chest Thrusts เท่านั้น"
+    ]
+  }
+]
+
