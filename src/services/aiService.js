@@ -1,6 +1,49 @@
 import { GoogleGenAI } from '@google/genai';
 import goldbookData from '../data/ergoldbook.json';
 
+// ฟังก์ชันค้นหาบทความที่เกี่ยวข้องที่สุดจาก 497 บทความ เพื่อควบคุมขนาด Token
+function getRelevantProtocols(queryText, maxResults = 6) {
+  if (!queryText || queryText.trim() === '') {
+    return goldbookData.slice(0, 6);
+  }
+
+  const terms = queryText
+    .toLowerCase()
+    .replace(/[^\u0E00-\u0E7Fa-zA-Z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => w.length > 1);
+
+  if (terms.length === 0) {
+    return goldbookData.slice(0, maxResults);
+  }
+
+  const scored = goldbookData.map((item) => {
+    let score = 0;
+    const title = (item.title || '').toLowerCase();
+    const category = (item.category || '').toLowerCase();
+    const content = (item.content || '').toLowerCase();
+
+    for (const term of terms) {
+      if (title.includes(term)) score += 15;
+      if (category.includes(term)) score += 8;
+      
+      const count = (content.match(new RegExp(term, 'g')) || []).length;
+      score += Math.min(count, 5);
+    }
+
+    return { item, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+
+  const matched = scored.filter((s) => s.score > 0);
+  if (matched.length > 0) {
+    return matched.slice(0, maxResults).map((s) => s.item);
+  }
+
+  return goldbookData.slice(0, maxResults);
+}
+
 export async function processMedicalQuery(inputText, imageBase64) {
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
@@ -14,7 +57,10 @@ export async function processMedicalQuery(inputText, imageBase64) {
   }
 
   const ai = new GoogleGenAI({ apiKey });
-  const contextData = JSON.stringify(goldbookData);
+
+  // คัดเลือกเฉพาะเนื้อหา Goldbook ที่ตรงกับคำถาม/เคส
+  const relevantProtocols = getRelevantProtocols(inputText, 6);
+  const contextData = JSON.stringify(relevantProtocols);
 
   const systemInstruction = `
 คุณเป็นผู้ช่วยแพทย์และพยาบาลเวชศาสตร์ฉุกเฉิน (ER Clinical Assistant) ประจำห้องฉุกเฉิน
@@ -26,8 +72,8 @@ export async function processMedicalQuery(inputText, imageBase64) {
    - หากไม่มีรูปภาพ: กำหนดให้ findings เป็น null
 
 2. Stage 2 (Clinical Protocol & Management):
-   - ค้นหาและจับคู่หัวข้อที่ตรงกันในชุดข้อมูล [ER_GOLDBOOK_DATABASE] เป็นอันดับแรก สรุปขั้นตอนปฏิบัติ ขนาดยา หัตถการ และข้อควรระวังตามที่ระบุไว้ในเนื้อหาของ ER Goldbook และระบุ "sourceType": "goldbook"
-   - หากไม่พบใน [ER_GOLDBOOK_DATABASE]: ให้ใช้แนวทางการรักษามาตรฐานทางเวชศาสตร์ฉุกเฉิน (Standard Emergency Medicine Guidelines) และระบุ "sourceType": "standard"
+   - ตรวจสอบแนวทางการรักษาจาก [RELEVANT_ER_GOLDBOOK_DATA] เป็นอันดับแรก หากพบแนวทางที่ตรงกัน ให้สรุปขั้นตอนปฏิบัติ ขนาดยา และการจัดการตาม Goldbook และระบุ "sourceType": "goldbook"
+   - หากไม่พบในข้อมูลที่ให้มา: ให้ใช้แนวทางการรักษามาตรฐานทางเวชศาสตร์ฉุกเฉิน (Standard Emergency Medicine Guidelines) และระบุ "sourceType": "standard"
 
 3. โครงสร้าง JSON ที่ต้องส่งกลับ (ห้ามตอบนอกเหนือจากรูปแบบ JSON นี้):
 {
@@ -35,13 +81,13 @@ export async function processMedicalQuery(inputText, imageBase64) {
   "protocolTitle": "ชื่อโรค/ภาวะฉุกเฉิน/หัตถการ",
   "sourceType": "goldbook" หรือ "standard",
   "actions": [
-    "การประเมินเบื้องต้นและการจัดการฉุกเฉิน (Initial Resuscitation / Splint / Reduction / Assessment)",
+    "การประเมินเบื้องต้นและการจัดการฉุกเฉิน (Initial Assessment & Resuscitation)",
     "ขนาดยาและการให้สารน้ำ (Medications, Dosages & Route)",
-    "ข้อควรระวัง / ภาวะแทรกซ้อน / Red flags"
+    "ข้อควรระวัง / ภาวะแทรกซ้อนที่ต้องระวัง / Red flags"
   ]
 }
 
-[ER_GOLDBOOK_DATABASE]:
+[RELEVANT_ER_GOLDBOOK_DATA]:
 ${contextData}
 `;
 
