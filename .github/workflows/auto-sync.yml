@@ -4,7 +4,7 @@ on:
   schedule:
     # รันอัตโนมัติทุกวันอาทิตย์ เวลา 00:00 น. (เวลาไทย)
     - cron: '0 17 * * 6'
-  workflow_dispatch: # เปิดให้สามารถกดปุ่ม "Run workflow" เพื่อสั่งอัปเดตสดผ่านหน้าเว็บได้ทันที
+  workflow_dispatch: # เปิดให้สามารถกดปุ่ม Run workflow สั่งอัปเดตสดได้
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Fetch latest data from Blogspot
         run: node fetch-data.mjs
