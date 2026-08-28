@@ -1,0 +1,39 @@
+name: Auto Sync ER Goldbook Data
+
+on:
+  schedule:
+    # รันอัตโนมัติทุกวันอาทิตย์ เวลา 00:00 น. (เวลาไทย)
+    - cron: '0 17 * * 6'
+  workflow_dispatch: # เปิดให้สามารถกดปุ่ม "Run workflow" เพื่อสั่งอัปเดตสดผ่านหน้าเว็บได้ทันที
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest data from Blogspot
+        run: node fetch-data.mjs
+
+      - name: Commit and Push if updated
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/ergoldbook.json
+          if git diff --staged --quiet; then
+            echo "✅ ฐานข้อมูลเป็นปัจจุบันอยู่แล้ว ไม่พบบทความใหม่"
+          else
+            git commit -m "Auto-sync ER Goldbook data [automated]"
+            git push
+            echo "🎉 ตรวจพบบทความใหม่ ทำการอัปเดตและส่งขึ้นระบบเรียบร้อย"
+          fi
